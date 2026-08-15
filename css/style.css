@@ -214,26 +214,16 @@ button { font-family: var(--font); }
 }
 .hero__sub strong { color: var(--green-deep); font-weight: 700; }
 
-.vsl-wrap {
-  background: linear-gradient(160deg, var(--green-deep) 0%, #084A40 100%);
-  border-radius: var(--radius-lg);
-  aspect-ratio: 16 / 9;
+/* Player VTurb da VSL: o padding de 56.25% (16:9) vem do próprio embed */
+vturb-smartplayer {
+  display: block;
   width: 100%;
   max-width: 760px;
-  margin: 0 auto 28px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /* !important: o embed traz style inline "margin: 0 auto" que zeraria o respiro antes do CTA */
+  margin: 0 auto 28px !important;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
   box-shadow: 0 12px 36px rgba(11, 100, 88, 0.22);
-  cursor: pointer;
-}
-.vsl-inner { text-align: center; color: rgba(255, 255, 255, 0.75); }
-.vsl-play  { font-size: 54px; line-height: 1; margin-bottom: 10px; color: var(--orange-soft); }
-.vsl-label {
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
 }
 
 /* ============================================================
