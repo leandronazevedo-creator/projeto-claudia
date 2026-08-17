@@ -37,6 +37,61 @@
   <link rel="dns-prefetch" href="https://license.vturb.com">
   <!-- End VTurb velocidade -->
 
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PNTZ1658DX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PNTZ1658DX');
+  </script>
+  <script>
+    // ViewContent: quando a página carrega
+    gtag('event', 'view_item', {
+      currency: 'BRL',
+      value: 297.00,
+      items: [{
+        item_name: 'Comunidade Diástase Nunca Mais',
+        item_category: 'Saúde e Bem-estar',
+        price: 297.00
+      }]
+    });
+
+    // begin_checkout: quando qualquer botão de CTA é clicado
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('a[href*="pay.kiwify.com.br"]')
+        .forEach(function(btn) {
+          btn.addEventListener('click', function() {
+            gtag('event', 'begin_checkout', {
+              currency: 'BRL',
+              value: 297.00,
+              items: [{
+                item_name: 'Comunidade Diástase Nunca Mais',
+                price: 297.00
+              }]
+            });
+          });
+        });
+    });
+
+    // Progresso de scroll (25%, 50%, 75%, 100%)
+    var scrollMarks = {25: false, 50: false, 75: false, 100: false};
+    window.addEventListener('scroll', function() {
+      var scrolled = (window.scrollY + window.innerHeight) /
+                     document.documentElement.scrollHeight * 100;
+      Object.keys(scrollMarks).forEach(function(mark) {
+        if (!scrollMarks[mark] && scrolled >= mark) {
+          scrollMarks[mark] = true;
+          gtag('event', 'scroll_depth', {
+            percent_scrolled: parseInt(mark),
+            page: 'pagina_vendas_claudia'
+          });
+        }
+      });
+    });
+  </script>
+  <!-- End Google tag -->
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Comunidade Diástase Nunca Mais · Cláudia Esquarcini</title>
