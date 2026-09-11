@@ -92,6 +92,29 @@
   </script>
   <!-- End Google tag -->
 
+  <!-- UTM passthrough: repassa os parâmetros utm da URL da página pro link de checkout do Kiwify -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var pageParams = new URLSearchParams(window.location.search);
+      var utmKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+      var utmParams = new URLSearchParams();
+      utmKeys.forEach(function(key) {
+        var value = pageParams.get(key);
+        if (value) utmParams.set(key, value);
+      });
+      if (utmParams.toString() === '') return;
+
+      document.querySelectorAll('a[href*="pay.kiwify.com.br"]').forEach(function(link) {
+        var url = new URL(link.href, window.location.href);
+        utmParams.forEach(function(value, key) {
+          url.searchParams.set(key, value);
+        });
+        link.href = url.toString();
+      });
+    });
+  </script>
+  <!-- End UTM passthrough -->
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Comunidade Diástase Nunca Mais · Cláudia Esquarcini</title>
