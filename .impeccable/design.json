@@ -1,0 +1,457 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-10T19:00:00Z",
+  "title": "Design System: Diástase Nunca Mais",
+  "extensions": {
+    "colorMeta": {
+      "orange": {
+        "role": "primary",
+        "displayName": "Laranja Ação",
+        "canonical": "#F2790F",
+        "tonalRamp": [
+          "#240000",
+          "#520000",
+          "#7F0F00",
+          "#A93500",
+          "#CD5D00",
+          "#EA8948",
+          "#FCB88E",
+          "#FFE9DA"
+        ]
+      },
+      "orange-hover": {
+        "role": "primary",
+        "displayName": "Laranja Brasa",
+        "canonical": "#D96A0C",
+        "tonalRamp": [
+          "#230000",
+          "#500000",
+          "#7C1700",
+          "#A53A00",
+          "#C96103",
+          "#E68B52",
+          "#F9B993",
+          "#FFE9DC"
+        ]
+      },
+      "orange-ink": {
+        "role": "primary",
+        "displayName": "Tinta Laranja",
+        "canonical": "#B4530A",
+        "tonalRamp": [
+          "#210000",
+          "#4C0500",
+          "#772000",
+          "#9F4000",
+          "#C3652B",
+          "#E08E61",
+          "#F5BA9C",
+          "#FFEADF"
+        ]
+      },
+      "orange-soft": {
+        "role": "primary",
+        "displayName": "Laranja Pêssego",
+        "canonical": "#FFB25C",
+        "tonalRamp": [
+          "#1D0300",
+          "#441400",
+          "#6C2E00",
+          "#924D00",
+          "#B57011",
+          "#D39756",
+          "#EBC095",
+          "#FBECDD"
+        ]
+      },
+      "green-deep": {
+        "role": "secondary",
+        "displayName": "Verde Profundo",
+        "canonical": "#0B6458",
+        "tonalRamp": [
+          "#00100C",
+          "#002E26",
+          "#004E44",
+          "#1E7063",
+          "#4A9184",
+          "#78B2A7",
+          "#ABD3CA",
+          "#E4F2EF"
+        ]
+      },
+      "green-night": {
+        "role": "secondary",
+        "displayName": "Verde Noite",
+        "canonical": "#07463D",
+        "tonalRamp": [
+          "#000F0C",
+          "#002C26",
+          "#174C43",
+          "#366D63",
+          "#5A8E84",
+          "#84B0A6",
+          "#B3D1CA",
+          "#E7F1EF"
+        ]
+      },
+      "footer-green": {
+        "role": "secondary",
+        "displayName": "Verde Rodapé",
+        "canonical": "#063B33",
+        "tonalRamp": [
+          "#000F0B",
+          "#072C26",
+          "#1F4B43",
+          "#3C6C62",
+          "#608D83",
+          "#88AEA6",
+          "#B5D0CA",
+          "#E8F1EF"
+        ]
+      },
+      "green-mid": {
+        "role": "secondary",
+        "displayName": "Verde Médio",
+        "canonical": "#158F7C",
+        "tonalRamp": [
+          "#00120B",
+          "#003125",
+          "#005242",
+          "#007462",
+          "#2C9583",
+          "#67B6A5",
+          "#A2D6C9",
+          "#E1F3EE"
+        ]
+      },
+      "green-light": {
+        "role": "secondary",
+        "displayName": "Verde Menta",
+        "canonical": "#7FD9C4",
+        "tonalRamp": [
+          "#00110B",
+          "#003024",
+          "#005041",
+          "#007260",
+          "#3D9481",
+          "#70B5A4",
+          "#A7D5C8",
+          "#E3F3EE"
+        ]
+      },
+      "green-pale": {
+        "role": "neutral",
+        "displayName": "Verde-Pálido",
+        "canonical": "#E8F5EE",
+        "tonalRamp": [
+          "#080C0A",
+          "#202723",
+          "#3B4540",
+          "#59645E",
+          "#7A857F",
+          "#9EA8A3",
+          "#C4CBC7",
+          "#EDEFEE"
+        ]
+      },
+      "off-white": {
+        "role": "neutral",
+        "displayName": "Quase-Branco",
+        "canonical": "#F7FAF7",
+        "tonalRamp": [
+          "#0A0B0A",
+          "#242624",
+          "#404340",
+          "#5F625F",
+          "#808380",
+          "#A3A6A3",
+          "#C8C9C8",
+          "#EEEEEE"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "Branco",
+        "canonical": "#FFFFFF",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#A5A5A5",
+          "#C9C9C9",
+          "#EEEEEE"
+        ]
+      },
+      "text-dark": {
+        "role": "neutral",
+        "displayName": "Grafite Verde",
+        "canonical": "#1B2B28",
+        "tonalRamp": [
+          "#060D0B",
+          "#1C2826",
+          "#364643",
+          "#546662",
+          "#758783",
+          "#9AA9A6",
+          "#C1CCC9",
+          "#ECEFEE"
+        ]
+      },
+      "text-mid": {
+        "role": "neutral",
+        "displayName": "Cinza Verde",
+        "canonical": "#4A5E5A",
+        "tonalRamp": [
+          "#060D0B",
+          "#1A2826",
+          "#344643",
+          "#526662",
+          "#738783",
+          "#98A9A6",
+          "#C0CCCA",
+          "#EBEFEF"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Manchete do hero."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Título de seção."
+      },
+      "hours": {
+        "displayName": "Hours",
+        "purpose": "Horários e relógios do Trilho das Horas, numerais tabulares."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Títulos de cartão e de momento."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Texto corrido."
+      },
+      "body-sm": {
+        "displayName": "Body pequeno",
+        "purpose": "Texto de cartão, FAQ, passos."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Texto de botão de compra, maiúsculas."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "Microcopy, autoria, aviso legal."
+      }
+    },
+    "shadows": [
+      {
+        "name": "card",
+        "value": "0 2px 12px rgba(11, 100, 88, 0.08)",
+        "purpose": "Cartões e pilha de valor."
+      },
+      {
+        "name": "card-media",
+        "value": "0 2px 14px rgba(11, 100, 88, 0.14)",
+        "purpose": "Prints e antes/depois."
+      },
+      {
+        "name": "media",
+        "value": "0 12px 36px rgba(11, 100, 88, 0.22)",
+        "purpose": "Player da VSL e print em destaque."
+      },
+      {
+        "name": "seal",
+        "value": "0 8px 32px rgba(11, 100, 88, 0.28)",
+        "purpose": "Selo de garantia."
+      },
+      {
+        "name": "cta-glow",
+        "value": "0 4px 20px rgba(242, 121, 15, 0.35)",
+        "purpose": "Botão de compra em repouso."
+      },
+      {
+        "name": "cta-glow-hover",
+        "value": "0 8px 28px rgba(242, 121, 15, 0.45)",
+        "purpose": "Botão de compra em hover."
+      },
+      {
+        "name": "sticky",
+        "value": "0 -4px 24px rgba(0, 0, 0, 0.25)",
+        "purpose": "CTA fixo do celular."
+      }
+    ],
+    "motion": [
+      {
+        "name": "button",
+        "value": "background 0.2s, transform 0.15s, box-shadow 0.2s",
+        "purpose": "Hover do botão de compra (sobe 2px)."
+      },
+      {
+        "name": "sticky-in",
+        "value": "transform 0.3s ease",
+        "purpose": "Entrada do CTA fixo."
+      },
+      {
+        "name": "ease-out-expo",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Horário e ponto acendendo no Trilho das Horas (0.4s)."
+      },
+      {
+        "name": "rail-fill",
+        "value": "scaleY(var(--p)) via scroll listener + requestAnimationFrame, marca a 62% da janela",
+        "purpose": "Preenchimento laranja do trilho."
+      },
+      {
+        "name": "fade-up",
+        "value": "fadeUp 0.3s ease (translateY 6px)",
+        "purpose": "Resultado do autoexame."
+      },
+      {
+        "name": "faq-toggle",
+        "value": "transform 0.25s, rotate(45deg)",
+        "purpose": "Ícone do FAQ."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "tablet",
+        "value": "768px"
+      },
+      {
+        "name": "desktop",
+        "value": "1024px"
+      },
+      {
+        "name": "large",
+        "value": "1440px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Botão de compra",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "CTA laranja para o checkout; único estilo de botão de compra do sistema.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">Quero começar agora</a>",
+      "css": ".ds-btn-primary { font-family: var(--font, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif); display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 16px 24px; background: var(--orange, #F2790F); color: #fff; font-size: 16px; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; text-decoration: none; border-radius: var(--radius, 12px); box-shadow: 0 4px 20px rgba(242,121,15,0.35); transition: background 0.2s, transform 0.15s, box-shadow 0.2s; } .ds-btn-primary:hover { background: var(--orange-h, #D96A0C); transform: translateY(-2px); box-shadow: 0 8px 28px rgba(242,121,15,0.45); } .ds-btn-primary:focus-visible { outline: 3px solid #B4530A; outline-offset: 3px; } .ds-btn-primary:active { transform: translateY(0); }"
+    },
+    {
+      "name": "CTA fixo (celular)",
+      "kind": "nav",
+      "refersTo": "sticky-cta",
+      "description": "Barra laranja fixa no rodapé do celular; a única navegação persistente.",
+      "html": "<div class=\"ds-sticky\"><a href=\"#\">Quero começar agora</a></div>",
+      "css": ".ds-sticky { font-family: var(--font, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif); background: var(--orange, #F2790F); padding: 12px 20px; text-align: center; box-shadow: 0 -4px 24px rgba(0,0,0,0.25); } .ds-sticky a { display: flex; align-items: center; justify-content: center; min-height: 48px; color: #fff; font-weight: 800; font-size: 15px; letter-spacing: 0.04em; text-transform: uppercase; text-decoration: none; } .ds-sticky a:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }"
+    },
+    {
+      "name": "Cartão de citação",
+      "kind": "card",
+      "refersTo": "card-quote",
+      "description": "Fala de aluna em itálico, borda lateral verde, sobre verde-pálido.",
+      "html": "<div class=\"ds-bg\"><blockquote class=\"ds-quote-card\">Eu tinha vergonha de rir alto em público.</blockquote></div>",
+      "css": ".ds-bg { background: #E8F5EE; padding: 24px; } .ds-quote-card { font-family: var(--font, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif); margin: 0; background: #fff; border-radius: 12px; padding: 20px 22px; font-size: 18px; font-style: italic; line-height: 1.55; color: #1B2B28; border-left: 4px solid #158F7C; box-shadow: 0 2px 12px rgba(11,100,88,0.08); }"
+    },
+    {
+      "name": "Painel de preço",
+      "kind": "card",
+      "refersTo": "panel-dark",
+      "description": "Âncora verde-profunda com o parcelamento em laranja pêssego.",
+      "html": "<div class=\"ds-price\"><p class=\"ds-price-from\">de <s>R$ 497</s> por</p><p class=\"ds-price-inst\">12x <strong>R$ 30,90</strong></p><p class=\"ds-price-or\">ou R$ 297 à vista</p></div>",
+      "css": ".ds-price { font-family: var(--font, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif); background: linear-gradient(160deg, #0B6458 0%, #07463D 100%); border-radius: 20px; padding: 36px 24px; text-align: center; } .ds-price p { margin: 0; } .ds-price-from { font-size: 17px; color: rgba(255,255,255,0.6); } .ds-price-from s { text-decoration-color: #F2790F; } .ds-price-inst { font-size: clamp(34px, 9vw, 60px); font-weight: 400; line-height: 1.15; color: #FFB25C; } .ds-price-inst strong { font-weight: 900; } .ds-price-or { font-size: 15px; color: rgba(255,255,255,0.55); }"
+    },
+    {
+      "name": "Item de FAQ",
+      "kind": "custom",
+      "refersTo": "faq-item",
+      "description": "Acordeão com sinal de mais em SVG que gira 45° quando aberto.",
+      "html": "<div class=\"ds-faq\"><button class=\"ds-faq-q\" aria-expanded=\"true\">Serve para quem tem mais de 60 anos?<svg viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.25\" stroke-linecap=\"round\"><path d=\"M12 5v14M5 12h14\"/></svg></button><div class=\"ds-faq-a\">Sim. Há alunas de quase 70 anos.</div></div>",
+      "css": ".ds-faq { font-family: var(--font, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif); background: #fff; border: 1px solid rgba(11,100,88,0.16); border-radius: 12px; overflow: hidden; box-shadow: 0 1px 8px rgba(11,100,88,0.06); } .ds-faq-q { font: inherit; width: 100%; min-height: 48px; display: flex; justify-content: space-between; align-items: center; gap: 14px; padding: 18px 20px; background: none; border: none; cursor: pointer; text-align: left; font-size: 17px; font-weight: 700; color: #1B2B28; transition: background 0.2s; } .ds-faq-q:hover { background: #F7FAF7; } .ds-faq-q:focus-visible { outline: 3px solid #B4530A; outline-offset: -3px; } .ds-faq-q[aria-expanded=\"true\"] { color: #0B6458; background: #E8F5EE; } .ds-faq-q svg { color: #158F7C; flex-shrink: 0; transition: transform 0.25s; } .ds-faq-q[aria-expanded=\"true\"] svg { transform: rotate(45deg); } .ds-faq-a { border-top: 1px solid rgba(11,100,88,0.08); padding: 16px 20px 20px; font-size: 17px; line-height: 1.7; color: #4A5E5A; }"
+    },
+    {
+      "name": "Trilho das Horas",
+      "kind": "custom",
+      "refersTo": "hours-time",
+      "description": "Assinatura: horários tabulares sobre trilho que se preenche de laranja com a rolagem; o primeiro momento está aceso.",
+      "html": "<ol class=\"ds-rail\" style=\"--p:0.45\"><li class=\"ds-moment is-lit\"><time class=\"ds-time\">07:10</time><div><h3>A tosse do café</h3><p>Uma tosse e a calcinha já não está seca.</p></div></li><li class=\"ds-moment\"><time class=\"ds-time\">12:30</time><div><h3>O espirro no mercado</h3><p>Você cruza as pernas antes de espirrar.</p></div></li></ol>",
+      "css": ".ds-rail { font-family: var(--font, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif); --time-col: 128px; list-style: none; margin: 0; padding: 8px 0; position: relative; background: #E8F5EE; } .ds-rail::before, .ds-rail::after { content: ''; position: absolute; top: 0; bottom: 0; left: calc(var(--time-col) + 15px); width: 3px; border-radius: 3px; } .ds-rail::before { background: rgba(21,143,124,0.22); } .ds-rail::after { background: #F2790F; transform-origin: top; transform: scaleY(var(--p)); } .ds-moment { display: grid; grid-template-columns: var(--time-col) 1fr; column-gap: 48px; position: relative; padding: 24px 0; } .ds-moment::before { content: ''; position: absolute; left: calc(var(--time-col) + 9px); top: 38px; width: 15px; height: 15px; border-radius: 50%; background: #E8F5EE; border: 3px solid #158F7C; z-index: 1; transition: background-color 0.4s cubic-bezier(0.16,1,0.3,1), border-color 0.4s cubic-bezier(0.16,1,0.3,1), transform 0.4s cubic-bezier(0.16,1,0.3,1); } .ds-moment.is-lit::before { background: #F2790F; border-color: #F2790F; transform: scale(1.15); } .ds-time { font-size: clamp(26px, 7vw, 46px); font-weight: 900; font-variant-numeric: tabular-nums; letter-spacing: -0.03em; line-height: 1; color: #0B6458; text-align: right; padding-top: 6px; transition: color 0.4s cubic-bezier(0.16,1,0.3,1); } .ds-moment.is-lit .ds-time { color: #D96A0C; } .ds-moment h3 { margin: 0 0 6px; font-size: clamp(19px, 3.2vw, 24px); font-weight: 800; line-height: 1.3; color: #1B2B28; } .ds-moment p { margin: 0; font-size: 17px; line-height: 1.6; color: #4A5E5A; max-width: 52ch; } @media (prefers-reduced-motion: reduce) { .ds-moment::before, .ds-time { transition: none; } }"
+    },
+    {
+      "name": "Régua do dia",
+      "kind": "custom",
+      "refersTo": "hours-time",
+      "description": "Versão compacta do trilho no hero: seis horários em linha sobre pontos laranja.",
+      "html": "<ol class=\"ds-ruler\"><li><time>07:10</time><span>café</span></li><li><time>09:40</time><span>escada</span></li><li><time>12:30</time><span>mercado</span></li><li><time>16:00</time><span>neta</span></li><li><time>19:20</time><span>risada</span></li><li><time>23:50</time><span>cama</span></li></ol>",
+      "css": ".ds-ruler { font-family: var(--font, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif); list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(6, 1fr); max-width: 640px; position: relative; background: #fff; } .ds-ruler::before { content: ''; position: absolute; left: 8%; right: 8%; top: 7px; height: 2px; background: rgba(21,143,124,0.22); } .ds-ruler li { display: flex; flex-direction: column; align-items: center; gap: 2px; position: relative; padding-top: 20px; } .ds-ruler li::before { content: ''; position: absolute; top: 2px; width: 12px; height: 12px; border-radius: 50%; background: #F2790F; box-shadow: 0 0 0 4px #fff; } .ds-ruler time { font-size: clamp(14px, 3.6vw, 18px); font-weight: 800; color: #0B6458; font-variant-numeric: tabular-nums; letter-spacing: -0.01em; line-height: 1.2; } .ds-ruler span { font-size: clamp(12px, 3vw, 14px); color: #4A5E5A; line-height: 1.2; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "A Conversa na Cozinha Clara",
+    "overview": "**Creative North Star: \"A Conversa na Cozinha Clara\"**\n\nUm mundo claro e acolhedor, de branco e verde-pálido, onde a voz é a da Cláudia falando direto com a aluna. O verde carrega identidade e estrutura: títulos, bordas, selo, a âncora escura das seções de revelação, oferta e fechamento. O laranja é a única voz de ação: botões de compra, números grandes, os horários acesos. A página alterna faixas de fundo (branco, verde-pálido, verde-profundo) separadas por ondas finas, e o leitor percorre uma coluna única e larga, sem nada competindo com o CTA.\n\nA tipografia é uma família só, Inter, usada em contraste extremo de peso: 900 nos títulos e números, 400 no corpo, corpo nunca abaixo de 17px porque quem lê tem de 40 a 65 anos e está no celular. A densidade é baixa e o ritmo é vertical; cartões são leves, com sombra verde difusa ou borda lateral verde, nunca pesados.\n\nA página de escape acrescentou ao mundo, sem trocar de identidade, a gramática das horas: horários grandes em numerais tabulares, presos a um trilho vertical que se enche de laranja com a rolagem. É o único dispositivo assinatura do sistema e pode ser reaproveitado sempre que o conteúdo for uma sequência no tempo.",
+    "keyCharacteristics": [
+      "Fundo claro (branco e verde-pálido) com uma âncora verde-profunda por trecho de página.",
+      "Laranja reservado a ação, números e horários; verde para tudo que é estrutura.",
+      "Inter em 900 contra 400; corpo de 18px, mínimo de 17px.",
+      "Coluna única de leitura, CTA laranja centralizado repetido ao fim de cada bloco persuasivo.",
+      "Gramática das horas: numerais tabulares sobre trilho que se preenche com a rolagem."
+    ],
+    "rules": [
+      {
+        "name": "The Laranja Só Age Rule",
+        "body": "Laranja aparece em botões de compra, números e horários; nunca em parágrafos, nunca como fundo de seção. Verde nunca é cor de botão de compra.",
+        "section": "colors"
+      },
+      {
+        "name": "The Tinta Para Texto Rule",
+        "body": "Texto laranja abaixo de 24px sobre claro usa a Tinta Laranja; a Laranja Brasa só escreve em tamanho de título ou de horário.",
+        "section": "colors"
+      },
+      {
+        "name": "The Faixas Alternadas Rule",
+        "body": "Seções consecutivas alternam branco e verde-pálido, com no máximo uma seção verde-profunda por trecho; a transição é uma onda SVG fina (48px) cuja cor é a da seção seguinte.",
+        "section": "colors"
+      },
+      {
+        "name": "The Corpo 17 Rule",
+        "body": "Nenhum texto de leitura abaixo de 17px; 13 a 15px só para microcopy, legendas e avisos.",
+        "section": "typography"
+      },
+      {
+        "name": "The Numeral Tabular Rule",
+        "body": "Horários, contagens e relógios usam `font-variant-numeric: tabular-nums` em 900 com espaçamento negativo, para que a coluna de horas alinhe como um quadro de horários.",
+        "section": "typography"
+      },
+      {
+        "name": "The Um CTA Por Bloco Rule",
+        "body": "Cada bloco persuasivo termina num CTA centralizado com microcopy logo abaixo; nada de dois botões lado a lado.",
+        "section": "layout"
+      },
+      {
+        "name": "The Sombra Verde Rule",
+        "body": "Sombras de superfície usam o verde-profundo com opacidade de 0.06 a 0.28; laranja só no brilho do botão de compra.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** usar Laranja Ação (#F2790F) só em botões de compra, números, pontos e trilho; texto laranja pequeno sobre claro em Tinta Laranja (#B4530A).",
+      "**Do** manter corpo em 18px com entrelinha 1.7, e nunca texto de leitura abaixo de 17px.",
+      "**Do** alternar faixas branco / verde-pálido e separar por ondas SVG de 48px na cor da próxima seção.",
+      "**Do** contar qualquer sequência no tempo (rotina, jornada, cronograma) com o Trilho das Horas e numerais tabulares 900.",
+      "**Do** dar a todo link e botão um foco visível de 3px em Tinta Laranja, ou Pêssego sobre o verde-profundo.",
+      "**Do** desenhar ícones em SVG de traço com `currentColor`."
+    ],
+    "donts": [
+      "**Don't** usar verde como cor de botão de compra nem laranja como fundo de seção.",
+      "**Don't** escrever parágrafos em laranja.",
+      "**Don't** usar sombras pretas ou deslocadas em cartões; a sombra é verde e difusa.",
+      "**Don't** introduzir uma segunda família tipográfica; Inter cobre título, número e corpo.",
+      "**Don't** colocar dois CTAs lado a lado nem CTA em outra cor que não o laranja."
+    ]
+  }
+}
