@@ -5,7 +5,7 @@ colors:
   orange: "#F2790F"
   orange-hover: "#D96A0C"
   orange-ink: "#B4530A"
-  orange-soft: "#FFB25C"
+  orange-soft: "#FFC885"
   cta: "#BD5808"
   cta-hover: "#A84D08"
   green-deep: "#0B6458"
@@ -149,7 +149,7 @@ Paleta de dois polos: verdes que estruturam e acalmam, laranjas que chamam para 
 - **Laranja Ação** (orange): fundo de todo botão de compra, do CTA fixo no celular, dos números de passo e dos pontos da régua do dia. Também na barra que preenche o trilho das horas. Nunca em texto corrido.
 - **Laranja Brasa** (orange-hover): hover dos botões e cor dos horários acesos no trilho (texto grande, 900). Em texto pequeno sobre claro fica abaixo de 4.5:1; para isso existe a Tinta Laranja.
 - **Tinta Laranja** (orange-ink): laranja para texto pequeno e anel de foco sobre branco e verde-pálido. Introduzida na página de escape (escopo `.pg-escape`) justamente para passar contraste; é a forma correta de escrever em laranja daqui em diante.
-- **Laranja Pêssego** (orange-soft): laranja sobre o verde-profundo: parcelamento, total do valor, destaques em negrito na revelação, relógio do CTA final, anel de foco nas seções escuras.
+- **Laranja Pêssego** (orange-soft): laranja sobre o verde-profundo: parcelamento, total do valor, destaques em negrito na revelação, relógio do CTA final, anel de foco nas seções escuras. Clareado de #FFB25C para #FFC885 para passar 4,5:1 sobre o verde-profundo.
 
 ### Secondary
 - **Verde Profundo** (green-deep): títulos de seção e manchete do hero sobre claro; fundo das seções de revelação/causa, do price-card e do fechamento; horários em repouso.
