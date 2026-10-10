@@ -14,7 +14,11 @@
 
   --orange:      #F2790F;   /* CTAs, números grandes, destaques */
   --orange-h:    #D96A0C;   /* hover e laranja em texto pequeno sobre claro */
-  --orange-soft: #FFB25C;   /* acentos laranja sobre fundo verde escuro */
+  --orange-soft: #FFC885;   /* acentos laranja sobre fundo verde escuro: 4,65:1 */
+  --orange-ink:  #B4530A;   /* laranja para texto pequeno sobre claro: 5,0:1 */
+
+  --cta:         #BD5808;   /* fundo de botão com texto branco: 4,6:1 */
+  --cta-h:       #A84D08;   /* hover do botão: 5,6:1 */
 
   --text-dark:  #1B2B28;
   --text-mid:   #4A5E5A;
@@ -55,13 +59,13 @@ button { font-family: var(--font); }
    COMPONENTES BASE
    ============================================================ */
 .eyebrow {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 800;
   letter-spacing: 0.13em;
   text-transform: uppercase;
   margin-bottom: 14px;
   display: block;
-  color: var(--orange-h);
+  color: var(--orange-ink);
 }
 .eyebrow--center { text-align: center; }
 .s-reveal .eyebrow { color: var(--orange-soft); }
@@ -86,7 +90,7 @@ button { font-family: var(--font); }
   min-height: 52px;
   width: 100%;
   max-width: 460px;
-  background: var(--orange);
+  background: var(--cta);
   color: var(--white);
   font-size: 16px;
   font-weight: 800;
@@ -98,12 +102,12 @@ button { font-family: var(--font); }
   border: none;
   cursor: pointer;
   transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
-  box-shadow: 0 4px 20px rgba(242, 121, 15, 0.35);
+  box-shadow: 0 4px 20px rgba(189, 88, 8, 0.32);
 }
 .btn-primary:hover {
-  background: var(--orange-h);
+  background: var(--cta-h);
   transform: translateY(-2px);
-  box-shadow: 0 8px 28px rgba(242, 121, 15, 0.45);
+  box-shadow: 0 8px 28px rgba(189, 88, 8, 0.42);
 }
 .btn-primary:active { transform: translateY(0); }
 .btn-xl { font-size: 17px; min-height: 58px; padding: 18px 28px; max-width: 500px; }
@@ -120,7 +124,7 @@ button { font-family: var(--font); }
   text-align: center;
   margin-top: 8px;
 }
-.cta-micro--light { color: rgba(255, 255, 255, 0.72); }
+.cta-micro--light { color: rgba(255, 255, 255, 0.85); }
 
 /* Divisores de onda finos (40 a 56px), fill = cor da PRÓXIMA seção */
 .wave { display: block; width: 100%; line-height: 0; pointer-events: none; }
@@ -164,7 +168,7 @@ button { font-family: var(--font); }
 .sticky-cta {
   position: fixed;
   bottom: 0; left: 0; right: 0;
-  background: var(--orange);
+  background: var(--cta);
   padding: 12px 20px;
   padding-bottom: calc(12px + env(safe-area-inset-bottom));
   text-align: center;
@@ -203,7 +207,7 @@ button { font-family: var(--font); }
   line-height: 1.12;
   margin-bottom: 20px;
 }
-.hero__highlight { color: var(--orange); display: block; }
+.hero__highlight { color: var(--orange-h); display: block; }
 .hero__sub {
   font-size: clamp(18px, 2.6vw, 21px);
   color: var(--text-mid);
@@ -290,7 +294,7 @@ vturb-smartplayer {
   margin-bottom: 8px;
 }
 .selfexam__intro {
-  color: rgba(255, 255, 255, 0.78);
+  color: rgba(255, 255, 255, 0.9);
   margin-bottom: 24px;
   font-size: 17px;
 }
@@ -302,7 +306,7 @@ vturb-smartplayer {
 }
 .step { display: flex; gap: 14px; align-items: flex-start; }
 .step__num {
-  background: var(--orange);
+  background: var(--cta);
   color: var(--white);
   font-size: 17px;
   font-weight: 900;
@@ -348,8 +352,8 @@ vturb-smartplayer {
 }
 .exam-opt:hover { border-color: var(--orange-soft); }
 .exam-opt.is-active {
-  background: var(--orange);
-  border-color: var(--orange);
+  background: var(--cta);
+  border-color: var(--cta);
   color: var(--white);
 }
 .exam-result {
@@ -583,7 +587,7 @@ vturb-smartplayer {
 
 .timeline__badge {
   display: inline-block;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -591,8 +595,8 @@ vturb-smartplayer {
   border-radius: 20px;
   margin-bottom: 10px;
 }
-.timeline__item--green .timeline__badge { background: var(--green-mid); color: var(--white); }
-.timeline__item--gold  .timeline__badge { background: var(--orange); color: var(--white); }
+.timeline__item--green .timeline__badge { background: var(--green-deep); color: var(--white); }
+.timeline__item--gold  .timeline__badge { background: var(--cta); color: var(--white); }
 
 .timeline__body {
   border-radius: var(--radius);
@@ -632,7 +636,7 @@ vturb-smartplayer {
   color: var(--text-dark);
   line-height: 1.55;
 }
-.journey-highlight strong { color: var(--orange-h); }
+.journey-highlight strong { color: var(--orange-ink); }
 
 /* ============================================================
    9. OFERTA (#E8F5EE, price-card #0B6458)
@@ -688,7 +692,7 @@ vturb-smartplayer {
   gap: 6px;
   scroll-margin-top: 20px;
 }
-.price-from { font-size: 17px; color: rgba(255, 255, 255, 0.6); }
+.price-from { font-size: 17px; color: rgba(255, 255, 255, 0.85); }
 .price-from s { text-decoration-color: var(--orange); }
 .price-main {
   font-size: clamp(30px, 7vw, 42px);
@@ -696,7 +700,7 @@ vturb-smartplayer {
   color: rgba(255, 255, 255, 0.85);
   line-height: 1.1;
 }
-.price-or { font-size: 15px; color: rgba(255, 255, 255, 0.45); }
+.price-or { font-size: 15px; color: rgba(255, 255, 255, 0.8); }
 .price-installment {
   font-size: clamp(34px, 9vw, 60px);
   font-weight: 400;
@@ -707,7 +711,7 @@ vturb-smartplayer {
 .price-installment strong { font-weight: 900; }
 .price-compare {
   font-size: 15px;
-  color: rgba(255, 255, 255, 0.65);
+  color: rgba(255, 255, 255, 0.85);
   font-style: italic;
   max-width: 340px;
   margin-bottom: 16px;
@@ -730,7 +734,7 @@ vturb-smartplayer {
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  background: linear-gradient(140deg, var(--green-deep), var(--green-mid));
+  background: var(--green-deep);
   border: 4px solid var(--green-pale);
   display: flex;
   flex-direction: column;
@@ -741,12 +745,12 @@ vturb-smartplayer {
   box-shadow: 0 8px 32px rgba(11, 100, 88, 0.28);
 }
 .seal__num  { font-size: 56px; font-weight: 900; color: var(--white); line-height: 1; }
-.seal__days { font-size: 15px; color: var(--green-light); font-weight: 700; }
+.seal__days { font-size: 15px; color: var(--white); font-weight: 700; }
 .seal__text {
-  font-size: 10px;
-  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.95);
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.03em;
   margin-top: 4px;
   line-height: 1.4;
 }
@@ -805,7 +809,7 @@ vturb-smartplayer {
 .bio-credential {
   font-size: 16px;
   font-weight: 700;
-  color: var(--orange-h);
+  color: var(--orange-ink);
   margin-bottom: 20px;
 }
 .bio-content > p {
@@ -907,7 +911,7 @@ vturb-smartplayer {
   font-weight: 400;
 }
 .final-install strong { font-weight: 900; }
-.final-or { font-size: 15px; color: rgba(255, 255, 255, 0.55); margin-top: 4px; }
+.final-or { font-size: 15px; color: rgba(255, 255, 255, 0.8); margin-top: 4px; }
 .final-tagline {
   font-size: clamp(17px, 2.5vw, 21px);
   color: var(--white);
@@ -936,11 +940,11 @@ vturb-smartplayer {
   padding: 32px 0 96px; /* espaço extra para o sticky CTA no mobile */
   text-align: center;
 }
-.footer p { font-size: 13px; color: rgba(255, 255, 255, 0.45); line-height: 1.8; }
-.footer a { color: rgba(255, 255, 255, 0.65); text-decoration: underline; text-underline-offset: 2px; }
+.footer p { font-size: 13px; color: rgba(255, 255, 255, 0.72); line-height: 1.8; }
+.footer a { color: rgba(255, 255, 255, 0.85); text-decoration: underline; text-underline-offset: 2px; }
 .footer a:hover { color: var(--white); }
 .footer__disclaimer {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 13px;
   max-width: 520px;
   margin: 0 auto 12px;
@@ -1043,4 +1047,109 @@ vturb-smartplayer {
 @media (min-width: 1440px) {
   .print-grid { columns: 4; }
   .bio-photo img { max-width: 400px; }
+}
+
+/* ============================================================
+   CRÍTICA 2026-10: Cláudia cedo, autoexame com próximo passo,
+   prova enxuta
+   ============================================================ */
+
+/* Capa da VSL enquanto o player não carrega: nunca uma caixa preta */
+.vturb-player-placeholder {
+  background: var(--green-deep) url(../img/claudia_hero.webp) center 22% / cover no-repeat !important;
+}
+
+/* Faixa "quem te acompanha" no início das provas */
+.companion {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  max-width: 640px;
+  margin: 0 auto 48px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid rgba(11, 100, 88, 0.16);
+}
+.companion picture { flex: 0 0 96px; }
+.companion img {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 12px 36px rgba(11, 100, 88, 0.22);
+}
+.companion figcaption { font-size: 17px; line-height: 1.55; color: var(--text-mid); }
+.companion figcaption strong {
+  display: block;
+  font-size: 19px;
+  font-weight: 800;
+  color: var(--green-deep);
+  margin-bottom: 4px;
+}
+
+/* Autoexame: quarto resultado e próximo passo */
+.exam-result--none { background: rgba(255, 255, 255, 0.1); border-left: 4px solid rgba(255, 255, 255, 0.6); }
+.exam-next { margin-top: 12px; }
+.exam-next a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-weight: 800;
+  color: var(--white);
+  text-decoration: underline;
+  text-decoration-color: var(--orange-soft);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+.exam-next a::after { content: '\2192'; margin-left: 8px; }
+.selfexam__results { scroll-margin-bottom: 96px; }
+
+/* Prova: 4 prints à vista, o resto sob demanda */
+.more-prints { margin: 4px 0 8px; }
+.more-prints summary {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  padding: 10px 20px;
+  border: 2px solid var(--green-mid);
+  border-radius: var(--radius);
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--green-deep);
+  background: var(--white);
+  cursor: pointer;
+  list-style: none;
+}
+.more-prints summary::-webkit-details-marker { display: none; }
+.more-prints[open] summary { margin-bottom: 16px; }
+.more-prints summary:focus-visible { outline: 3px solid var(--orange-ink, #B4530A); outline-offset: 3px; }
+
+/* O que muda: três resultados em lista, sem ícones */
+.changes-list {
+  list-style: none;
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.changes-list li { padding-top: 22px; border-top: 1px solid rgba(11, 100, 88, 0.16); }
+.changes-list li:first-child { border-top: none; padding-top: 0; }
+.changes-list h3 {
+  font-size: clamp(21px, 3.4vw, 26px);
+  font-weight: 900;
+  color: var(--green-deep);
+  margin-bottom: 6px;
+}
+.changes-list p { font-size: 18px; color: var(--text-mid); line-height: 1.6; }
+
+.faq-a a { color: var(--green-deep); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+
+@media (min-width: 768px) {
+  .companion picture { flex-basis: 112px; }
+  .companion img { width: 112px; height: 112px; }
+  .selfexam__options { flex-wrap: wrap; }
+  .exam-opt { flex: 1 1 calc(50% - 10px); }
+}
+@media (min-width: 1024px) {
+  .exam-opt { flex: 1 1 0; }
 }

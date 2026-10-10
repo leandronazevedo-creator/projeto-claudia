@@ -1,0 +1,88 @@
+/* ============================================================
+   ESCAPE SEM VÍDEO: a foto da Cláudia ocupa o lugar da VSL.
+   Herda ../css/style.css e ../css/escape.css.
+   ============================================================ */
+
+.pg-novideo .hero-split { padding: 36px 0 44px; }
+.pg-novideo .hero-split__copy { text-align: center; }
+.pg-novideo .esc-headline { margin-bottom: 18px; }
+.pg-novideo .day-ruler { margin-bottom: 24px; }
+
+/* Celular: foto e assinatura lado a lado, entre a régua e o texto */
+.hero-claudia {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: 440px;
+  margin: 0 auto 22px;
+  text-align: left;
+}
+.hero-claudia picture { flex: 0 0 132px; }
+.hero-claudia img {
+  width: 132px;
+  height: 132px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 12px 36px rgba(11, 100, 88, 0.22); /* sombra de mídia */
+}
+.hero-claudia figcaption {
+  font-size: 16px;
+  line-height: 1.45;
+  color: var(--text-mid);
+}
+.hero-claudia figcaption strong {
+  display: block;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--green-deep);
+  margin-bottom: 2px;
+}
+
+.pg-novideo .hero__sub { margin-bottom: 24px; }
+
+/* Desktop: texto à esquerda, Cláudia grande à direita */
+@media (min-width: 1024px) {
+  .pg-novideo .hero-split { padding: 56px 0 72px; }
+  .pg-novideo .hero-split__copy {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+    grid-template-areas:
+      "title  photo"
+      "ruler  photo"
+      "sub    photo"
+      "cta    photo";
+    grid-template-rows: auto auto auto 1fr;
+    max-width: 1100px;
+    margin: 0 auto;
+    column-gap: 56px;
+    text-align: left;
+    align-items: start;
+  }
+  .pg-novideo .esc-headline { grid-area: title; font-size: clamp(38px, 3.6vw, 52px); margin-bottom: 22px; }
+  .pg-novideo .day-ruler    { grid-area: ruler; margin: 8px 0 28px; max-width: 560px; }
+  .pg-novideo .hero__sub    { grid-area: sub; margin: 0 0 28px; max-width: 600px; }
+  .pg-novideo .cta-block    { grid-area: cta; align-items: flex-start; }
+  .pg-novideo .cta-block .cta-micro { text-align: left; }
+
+  .hero-claudia {
+    grid-area: photo;
+    align-self: start;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+    max-width: none;
+    margin: 10px 0 0;
+  }
+  .hero-claudia picture { flex: none; }
+  .hero-claudia img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 12px 36px rgba(11, 100, 88, 0.22); /* sombra de mídia */
+  }
+  .hero-claudia figcaption { font-size: 16px; padding: 0 4px; }
+}
+
+/* Bio: foto vertical, diferente da do topo */
+.pg-novideo .bio-photo img { aspect-ratio: 4 / 5; object-fit: cover; }

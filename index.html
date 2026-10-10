@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <meta charset="UTF-8">
   <!-- Meta Pixel -->
   <script>
   !function(f,b,e,v,n,t,s)
@@ -115,7 +116,6 @@
   </script>
   <!-- End UTM passthrough -->
 
-  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Comunidade Diástase Nunca Mais · Cláudia Esquarcini</title>
   <meta name="description" content="Te disseram que essa barriga não tem mais jeito. Disseram errado. Elimine a diástase sem cirurgia e sem sair de casa, com acompanhamento diário da Cláudia Esquarcini.">
@@ -129,7 +129,7 @@
 <body>
 
 <!-- STICKY CTA (mobile): aparece quando o hero sai da tela -->
-<div class="sticky-cta" id="stickyCta" aria-hidden="true">
+<div class="sticky-cta" id="stickyCta" aria-hidden="true" inert>
   <a href="https://pay.kiwify.com.br/fna2soC">QUERO ELIMINAR MINHA DIÁSTASE</a>
 </div>
 
@@ -182,7 +182,7 @@
       <blockquote class="mirror-card">Só uso legging. Calça jeans? Desisti de provar.</blockquote>
       <blockquote class="mirror-card">Nas fotos, eu me escondo atrás de alguém. Ou nem apareço.</blockquote>
       <blockquote class="mirror-card">Já me falaram: essa barriga não tem mais jeito.</blockquote>
-      <blockquote class="mirror-card">Evito o espelho de corpo inteiro. Faz anos.</blockquote>
+      <blockquote class="mirror-card">Tusso, espirro ou dou risada e escapa um pouco de xixi.</blockquote>
       <blockquote class="mirror-card">Fiz dieta, academia, abdominal. A barriga continua aqui.</blockquote>
     </div>
 
@@ -247,17 +247,25 @@
         <button type="button" class="exam-opt" data-result="exam-mild">1 dedo ou menos</button>
         <button type="button" class="exam-opt" data-result="exam-mod">2 a 3 dedos</button>
         <button type="button" class="exam-opt" data-result="exam-sev">4 dedos ou mais</button>
+        <button type="button" class="exam-opt" data-result="exam-none">Não consegui sentir</button>
       </div>
 
-      <div class="selfexam__results">
+      <div class="selfexam__results" aria-live="polite">
         <div class="exam-result exam-result--mild" id="exam-mild" hidden>
           <p><strong>Afastamento leve.</strong> É o cenário ideal para começar: a base de respiração e ativação profunda trabalha exatamente essa musculatura e ajuda a evitar que o afastamento aumente.</p>
+          <p class="exam-next"><a href="#historias">Veja alunas que começaram como você</a></p>
         </div>
         <div class="exam-result exam-result--mod" id="exam-mod" hidden>
           <p><strong>Diástase moderada.</strong> É a faixa mais comum entre as alunas da Cláudia, e o perfil da maioria dos relatos que você vê nesta página.</p>
+          <p class="exam-next"><a href="#historias">Veja alunas que começaram como você</a></p>
         </div>
         <div class="exam-result exam-result--sev" id="exam-sev" hidden>
           <p><strong>Diástase acentuada.</strong> O método também é para você: a Cláudia tem alunas com esse grau que relatam evolução, incluindo quem estava com cirurgia marcada e cancelou.</p>
+          <p class="exam-next"><a href="#historias">Veja alunas que começaram como você</a></p>
+        </div>
+        <div class="exam-result exam-result--none" id="exam-none" hidden>
+          <p><strong>Tudo bem, é comum na primeira vez.</strong> Muitas alunas só sentem o vão depois de aprender a relaxar e contrair do jeito certo. No primeiro dia a Cláudia te ensina a fazer o autoexame com calma, e a base de respiração e ativação profunda é o começo de todas as alunas.</p>
+          <p class="exam-next"><a href="#historias">Veja alunas que começaram como você</a></p>
         </div>
       </div>
     </div>
@@ -284,6 +292,17 @@
      ============================================================ -->
 <section class="s-beforeafter" id="antes-depois">
   <div class="container">
+    <figure class="companion">
+      <picture>
+        <source srcset="img/claudia_rosto.webp" type="image/webp">
+        <img src="img/claudia_rosto.jpg" alt="Cláudia Esquarcini, sorrindo" width="480" height="480" loading="lazy">
+      </picture>
+      <figcaption>
+        <strong>Quem te acompanha: Cláudia Esquarcini</strong>
+        De segunda a sexta, no grupo do WhatsApp, por 6 meses. Exercício novo todo dia útil e dúvidas respondidas por ela.
+      </figcaption>
+    </figure>
+
     <h2 class="section-title section-title--center">Veja o que aconteceu com quem entrou para a Comunidade Diástase Nunca Mais</h2>
 
     <div class="ba-grid">
@@ -384,6 +403,11 @@
           <img src="img/depoimentos/calca-jeans.jpg" alt="Print de aluna com foto do resultado relatando que nunca tinha tido prazer de vestir uma calça por causa da barriga estufada" width="513" height="714" loading="lazy">
         </picture>
       </button>
+    </div>
+
+    <details class="more-prints">
+      <summary>Ver mais 3 relatos</summary>
+      <div class="print-grid">
       <button type="button" class="print" data-full="img/depoimentos/abdomen-definido.webp">
         <picture>
           <source srcset="img/depoimentos/abdomen-definido.webp" type="image/webp">
@@ -402,7 +426,8 @@
           <img src="img/depoimentos/comentario-15-dias.jpg" alt="Comentário de aluna relatando que com 15 dias de aulas já está bem melhor" width="800" height="231" loading="lazy">
         </picture>
       </button>
-    </div>
+      </div>
+    </details>
 
     <p class="disclaimer-line">Resultados individuais. Depoimentos reais de alunas, usados com autorização.</p>
   </div>
@@ -416,38 +441,20 @@
   <div class="container">
     <h2 class="section-title section-title--center">O que as alunas dizem que mudou, além da barriga</h2>
 
-    <div class="changes-grid">
-      <div class="change-card">
-        <div class="change-icon">&#128086;</div>
-        <h3>O guarda-roupa inteiro de volta.</h3>
+    <ul class="changes-list">
+      <li>
+        <h3>O guarda-roupa de volta.</h3>
         <p>"Fui comprar calça jeans e ficou bem no meu corpo. Antes eu só usava legging."</p>
-      </div>
-      <div class="change-card">
-        <div class="change-icon">&#129706;</div>
-        <h3>O espelho virou aliado.</h3>
+      </li>
+      <li>
+        <h3>O espelho e as fotos viram aliados.</h3>
         <p>"Atualmente gosto de olhar minha barriga no espelho e nas fotos. Fiquei elegante."</p>
-      </div>
-      <div class="change-card">
-        <div class="change-icon">&#128248;</div>
-        <h3>Aparecer nas fotos.</h3>
-        <p>Sem se esconder atrás de ninguém, sem recusar, sem editar.</p>
-      </div>
-      <div class="change-card">
-        <div class="change-icon">&#127807;</div>
-        <h3>Disposição e leveza.</h3>
-        <p>Menos inchaço, intestino funcionando, mais energia no dia.</p>
-      </div>
-      <div class="change-card">
-        <div class="change-icon">&#10024;</div>
-        <h3>Confiança que transborda.</h3>
-        <p>"Mudou tudo. Até meu casamento mudou."</p>
-      </div>
-      <div class="change-card">
-        <div class="change-icon">&#127800;</div>
-        <h3>Saúde íntima.</h3>
-        <p>Ativação de assoalho pélvico desde o primeiro módulo, mais o bônus de pompoarismo. Alunas relatam melhora nos escapes ao tossir, rir e pular.</p>
-      </div>
-    </div>
+      </li>
+      <li>
+        <h3>Menos escape ao tossir, rir e pular.</h3>
+        <p>Ativação do assoalho pélvico desde o primeiro módulo, mais a aula bônus de pompoarismo. Alunas relatam melhora nos escapes.</p>
+      </li>
+    </ul>
   </div>
   <div class="wave" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 48" preserveAspectRatio="none"><path d="M0,14 C480,48 960,0 1440,34 L1440,48 L0,48 Z" fill="#E8F5EE"/></svg></div>
 </section>
@@ -490,11 +497,6 @@
         <figcaption>Fran, aluna do programa</figcaption>
       </figure>
     </div>
-
-    <blockquote class="claudia-quote claudia-quote--big">
-      <p>"Tenho alunas que estavam com cirurgia marcada. Cancelaram depois do método."</p>
-      <footer>Cláudia Esquarcini</footer>
-    </blockquote>
 
     <div class="cta-block">
       <a href="https://pay.kiwify.com.br/fna2soC" class="btn-primary btn-xl">QUERO ELIMINAR MINHA DIÁSTASE</a>
@@ -661,8 +663,8 @@
       <div class="bio-photo">
         <!-- PLACEHOLDER: trocar pelo PNG transparente real da Cláudia quando disponível -->
         <picture>
-          <source srcset="img/claudia_fundo_teal.webp" type="image/webp">
-          <img src="img/claudia_fundo_teal.png"
+          <source srcset="img/claudia_hero.webp" type="image/webp">
+          <img src="img/claudia_hero.jpg"
                alt="Cláudia Esquarcini, especialista em tratamento de diástase abdominal"
                width="480" height="480"
                loading="lazy"
@@ -733,6 +735,16 @@
       </div>
 
       <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-a10">
+          "Tenho escape de xixi quando tusso ou dou risada. O programa ajuda?"
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a" id="faq-a10" hidden>
+          <p>Muitas vezes escape e barriga vêm juntos, porque têm a mesma raiz: a musculatura profunda que deixou de sustentar. O programa trabalha o assoalho pélvico desde o Módulo Iniciante e tem a aula bônus de Pompoarismo, e alunas relatam melhora nos escapes ao tossir, rir e pular. Os resultados variam de pessoa para pessoa, e o programa não substitui avaliação médica.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
         <button class="faq-q" aria-expanded="false" aria-controls="faq-a2">
           "Tenho mais de 55 anos. Consigo acompanhar?"
           <span class="faq-icon" aria-hidden="true">+</span>
@@ -758,7 +770,7 @@
           <span class="faq-icon" aria-hidden="true">+</span>
         </button>
         <div class="faq-a" id="faq-a4" hidden>
-          <p>A pesquisa com as alunas mostrou que muitas achavam exatamente isso, até fazerem o autoexame e descobrirem a diástase. Faça o teste dos dedos lá em cima nesta página: leva 30 segundos e pode mudar a explicação que você carrega há anos.</p>
+          <p>A pesquisa com as alunas mostrou que muitas achavam exatamente isso, até fazerem o autoexame e descobrirem a diástase. <a href="#autoexame">Faça o teste dos dedos</a> lá em cima nesta página: leva 30 segundos e pode mudar a explicação que você carrega há anos.</p>
         </div>
       </div>
 

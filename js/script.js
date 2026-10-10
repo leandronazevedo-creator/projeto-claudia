@@ -25,18 +25,28 @@ document.querySelectorAll('.faq-q').forEach(function (btn) {
 var stickyCta = document.getElementById('stickyCta');
 var hero = document.getElementById('hero');
 
+/* Some quando o hero, o card de preço ou o CTA final estão na tela,
+   para nunca mostrar dois botões iguais ao mesmo tempo */
 if (stickyCta && hero && typeof IntersectionObserver !== 'undefined') {
-  new IntersectionObserver(function (entries) {
+  var watched = [hero, document.getElementById('checkout'), document.getElementById('cta-final')]
+    .filter(function (el) { return el; });
+  var onScreen = {};
+
+  var setSticky = function (show) {
+    stickyCta.classList.toggle('is-visible', show);
+    stickyCta.setAttribute('aria-hidden', show ? 'false' : 'true');
+    stickyCta.inert = !show;
+  };
+
+  setSticky(false);
+  var stickyObserver = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        stickyCta.classList.remove('is-visible');
-        stickyCta.setAttribute('aria-hidden', 'true');
-      } else {
-        stickyCta.classList.add('is-visible');
-        stickyCta.setAttribute('aria-hidden', 'false');
-      }
+      onScreen[entry.target.id] = entry.isIntersecting;
     });
-  }, { threshold: 0 }).observe(hero);
+    var anyVisible = watched.some(function (el) { return onScreen[el.id] !== false; });
+    setSticky(!anyVisible);
+  }, { threshold: 0 });
+  watched.forEach(function (el) { stickyObserver.observe(el); });
 }
 
 /* ============================================================
@@ -53,7 +63,11 @@ document.querySelectorAll('.exam-opt').forEach(function (btn) {
 
     this.classList.add('is-active');
     var result = document.getElementById(this.getAttribute('data-result'));
-    if (result) result.hidden = false;
+    if (result) {
+      result.hidden = false;
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      result.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'center' });
+    }
   });
 });
 
