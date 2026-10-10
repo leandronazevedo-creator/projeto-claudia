@@ -80,10 +80,13 @@ if (lightbox) {
   var lightboxImg = lightbox.querySelector('.lightbox__img');
   var closeBtn = lightbox.querySelector('.lightbox__close');
 
+  var lastTrigger = null;
+
   var closeLightbox = function () {
     lightbox.hidden = true;
-    lightboxImg.src = '';
+    lightboxImg.removeAttribute('src');
     document.body.style.overflow = '';
+    if (lastTrigger) lastTrigger.focus();
   };
 
   document.querySelectorAll('.print[data-full]').forEach(function (btn) {
@@ -91,8 +94,10 @@ if (lightbox) {
       lightboxImg.src = this.getAttribute('data-full');
       var innerImg = this.querySelector('img');
       if (innerImg) lightboxImg.alt = innerImg.alt;
+      lastTrigger = this;
       lightbox.hidden = false;
       document.body.style.overflow = 'hidden';
+      closeBtn.focus();
     });
   });
 
@@ -101,7 +106,10 @@ if (lightbox) {
     if (e.target === lightbox) closeLightbox();
   });
   document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape' && !lightbox.hidden) closeLightbox();
+    if (lightbox.hidden) return;
+    if (e.key === 'Escape') closeLightbox();
+    /* único controle da janela: o foco fica no botão de fechar */
+    if (e.key === 'Tab') { e.preventDefault(); closeBtn.focus(); }
   });
 }
 
