@@ -6,6 +6,8 @@ colors:
   orange-hover: "#D96A0C"
   orange-ink: "#B4530A"
   orange-soft: "#FFB25C"
+  cta: "#BD5808"
+  cta-hover: "#A84D08"
   green-deep: "#0B6458"
   green-night: "#07463D"
   footer-green: "#063B33"
@@ -76,17 +78,17 @@ spacing:
   reading-max: "760px"
 components:
   button-primary:
-    backgroundColor: "{colors.orange}"
+    backgroundColor: "{colors.cta}"
     textColor: "{colors.white}"
     typography: "{typography.label}"
     rounded: "{rounded.md}"
     padding: "16px 24px"
     height: "52px"
   button-primary-hover:
-    backgroundColor: "{colors.orange-hover}"
+    backgroundColor: "{colors.cta-hover}"
     textColor: "{colors.white}"
   sticky-cta:
-    backgroundColor: "{colors.orange}"
+    backgroundColor: "{colors.cta}"
     textColor: "{colors.white}"
     padding: "12px 20px"
     height: "48px"
@@ -221,7 +223,7 @@ Cantos suavemente arredondados: 12px em botões, cartões, campos e prints; 20px
 Confiante e grande, feito para o polegar.
 - **Shape:** cantos suaves (12px), altura mínima de 52px (58px na variante XL).
 - **Primary:** fundo Laranja Ação, texto branco em Label (800, 16px, maiúsculas, 0.04em), padding 16px 24px; largura total até 460px no celular, largura automática a partir de 768px. Sempre um `<a>` para o checkout.
-- **Dívida conhecida:** branco sobre Laranja Ação mede ~2.8:1, abaixo de AA mesmo para 16px em 800. É o estado entregue, não uma regra: não cite este par como precedente para outro texto branco sobre laranja.
+- **Laranja Botão (#BD5808, hover #A84D08):** todo texto branco sobre laranja usa este tom (botões de compra, CTA fixo, números do autoexame, selos da jornada): 4,6:1 e 5,6:1 com branco. O Laranja Ação (#F2790F) fica para pontos, trilho, bordas e números grandes sem texto branco por cima.
 - **Hover / Focus:** fundo Laranja Brasa, sobe 2px, brilho laranja cresce; transição 0.2s. Foco visível com contorno de 3px em Tinta Laranja (Pêssego nas seções escuras), afastado 3px.
 - **Opções do autoexame:** contorno branco translúcido de 2px sobre o verde-profundo; ativa vira laranja cheio.
 
@@ -252,7 +254,7 @@ Uma sequência no tempo contada por horários.
 ## Do's and Don'ts
 
 ### Do:
-- **Do** usar Laranja Ação (#F2790F) só em botões de compra, números, pontos e trilho; texto laranja pequeno sobre claro em Tinta Laranja (#B4530A).
+- **Do** usar Laranja Botão (#BD5808) no fundo de todo botão de compra e Laranja Ação (#F2790F) só em números, pontos e trilho; texto laranja pequeno sobre claro em Tinta Laranja (#B4530A).
 - **Do** manter corpo em 18px com entrelinha 1.7, e nunca texto de leitura abaixo de 17px.
 - **Do** alternar faixas branco / verde-pálido e separar por ondas SVG de 48px na cor da próxima seção.
 - **Do** contar qualquer sequência no tempo (rotina, jornada, cronograma) com o Trilho das Horas e numerais tabulares 900.

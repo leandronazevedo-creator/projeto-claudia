@@ -340,7 +340,7 @@
       "refersTo": "button-primary",
       "description": "CTA laranja para o checkout; único estilo de botão de compra do sistema.",
       "html": "<a class=\"ds-btn-primary\" href=\"#\">Quero começar agora</a>",
-      "css": ".ds-btn-primary { font-family: var(--font, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif); display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 16px 24px; background: var(--orange, #F2790F); color: #fff; font-size: 16px; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; text-decoration: none; border-radius: var(--radius, 12px); box-shadow: 0 4px 20px rgba(242,121,15,0.35); transition: background 0.2s, transform 0.15s, box-shadow 0.2s; } .ds-btn-primary:hover { background: var(--orange-h, #D96A0C); transform: translateY(-2px); box-shadow: 0 8px 28px rgba(242,121,15,0.45); } .ds-btn-primary:focus-visible { outline: 3px solid #B4530A; outline-offset: 3px; } .ds-btn-primary:active { transform: translateY(0); }"
+      "css": ".ds-btn-primary { font-family: var(--font, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif); display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 16px 24px; background: var(--cta, #BD5808); color: #fff; font-size: 16px; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; text-decoration: none; border-radius: var(--radius, 12px); box-shadow: 0 4px 20px rgba(189,88,8,0.32); transition: background 0.2s, transform 0.15s, box-shadow 0.2s; } .ds-btn-primary:hover { background: var(--cta-h, #A84D08); transform: translateY(-2px); box-shadow: 0 8px 28px rgba(189,88,8,0.42); } .ds-btn-primary:focus-visible { outline: 3px solid #B4530A; outline-offset: 3px; } .ds-btn-primary:active { transform: translateY(0); }"
     },
     {
       "name": "CTA fixo (celular)",
@@ -348,7 +348,7 @@
       "refersTo": "sticky-cta",
       "description": "Barra laranja fixa no rodapé do celular; a única navegação persistente.",
       "html": "<div class=\"ds-sticky\"><a href=\"#\">Quero começar agora</a></div>",
-      "css": ".ds-sticky { font-family: var(--font, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif); background: var(--orange, #F2790F); padding: 12px 20px; text-align: center; box-shadow: 0 -4px 24px rgba(0,0,0,0.25); } .ds-sticky a { display: flex; align-items: center; justify-content: center; min-height: 48px; color: #fff; font-weight: 800; font-size: 15px; letter-spacing: 0.04em; text-transform: uppercase; text-decoration: none; } .ds-sticky a:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }"
+      "css": ".ds-sticky { font-family: var(--font, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif); background: var(--cta, #BD5808); padding: 12px 20px; text-align: center; box-shadow: 0 -4px 24px rgba(0,0,0,0.25); } .ds-sticky a { display: flex; align-items: center; justify-content: center; min-height: 48px; color: #fff; font-weight: 800; font-size: 15px; letter-spacing: 0.04em; text-transform: uppercase; text-decoration: none; } .ds-sticky a:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }"
     },
     {
       "name": "Cartão de citação",
@@ -439,7 +439,7 @@
       }
     ],
     "dos": [
-      "**Do** usar Laranja Ação (#F2790F) só em botões de compra, números, pontos e trilho; texto laranja pequeno sobre claro em Tinta Laranja (#B4530A).",
+      "**Do** usar Laranja Botão (#BD5808) no fundo de todo botão de compra e Laranja Ação (#F2790F) só em números, pontos e trilho; texto laranja pequeno sobre claro em Tinta Laranja (#B4530A).",
       "**Do** manter corpo em 18px com entrelinha 1.7, e nunca texto de leitura abaixo de 17px.",
       "**Do** alternar faixas branco / verde-pálido e separar por ondas SVG de 48px na cor da próxima seção.",
       "**Do** contar qualquer sequência no tempo (rotina, jornada, cronograma) com o Trilho das Horas e numerais tabulares 900.",

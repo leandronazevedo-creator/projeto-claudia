@@ -16,6 +16,9 @@
   --orange-h:    #D96A0C;   /* hover e laranja em texto pequeno sobre claro */
   --orange-soft: #FFB25C;   /* acentos laranja sobre fundo verde escuro */
 
+  --cta:         #BD5808;   /* fundo de botão com texto branco: 4,6:1 */
+  --cta-h:       #A84D08;   /* hover do botão: 5,6:1 */
+
   --text-dark:  #1B2B28;
   --text-mid:   #4A5E5A;
 
@@ -86,7 +89,7 @@ button { font-family: var(--font); }
   min-height: 52px;
   width: 100%;
   max-width: 460px;
-  background: var(--orange);
+  background: var(--cta);
   color: var(--white);
   font-size: 16px;
   font-weight: 800;
@@ -98,12 +101,12 @@ button { font-family: var(--font); }
   border: none;
   cursor: pointer;
   transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
-  box-shadow: 0 4px 20px rgba(242, 121, 15, 0.35);
+  box-shadow: 0 4px 20px rgba(189, 88, 8, 0.32);
 }
 .btn-primary:hover {
-  background: var(--orange-h);
+  background: var(--cta-h);
   transform: translateY(-2px);
-  box-shadow: 0 8px 28px rgba(242, 121, 15, 0.45);
+  box-shadow: 0 8px 28px rgba(189, 88, 8, 0.42);
 }
 .btn-primary:active { transform: translateY(0); }
 .btn-xl { font-size: 17px; min-height: 58px; padding: 18px 28px; max-width: 500px; }
@@ -164,7 +167,7 @@ button { font-family: var(--font); }
 .sticky-cta {
   position: fixed;
   bottom: 0; left: 0; right: 0;
-  background: var(--orange);
+  background: var(--cta);
   padding: 12px 20px;
   padding-bottom: calc(12px + env(safe-area-inset-bottom));
   text-align: center;
@@ -302,7 +305,7 @@ vturb-smartplayer {
 }
 .step { display: flex; gap: 14px; align-items: flex-start; }
 .step__num {
-  background: var(--orange);
+  background: var(--cta);
   color: var(--white);
   font-size: 17px;
   font-weight: 900;
@@ -348,8 +351,8 @@ vturb-smartplayer {
 }
 .exam-opt:hover { border-color: var(--orange-soft); }
 .exam-opt.is-active {
-  background: var(--orange);
-  border-color: var(--orange);
+  background: var(--cta);
+  border-color: var(--cta);
   color: var(--white);
 }
 .exam-result {
@@ -591,8 +594,8 @@ vturb-smartplayer {
   border-radius: 20px;
   margin-bottom: 10px;
 }
-.timeline__item--green .timeline__badge { background: var(--green-mid); color: var(--white); }
-.timeline__item--gold  .timeline__badge { background: var(--orange); color: var(--white); }
+.timeline__item--green .timeline__badge { background: var(--green-deep); color: var(--white); }
+.timeline__item--gold  .timeline__badge { background: var(--cta); color: var(--white); }
 
 .timeline__body {
   border-radius: var(--radius);
