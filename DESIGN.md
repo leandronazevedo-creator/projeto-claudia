@@ -204,7 +204,7 @@ Híbrido discreto: a profundidade vem sobretudo da alternância tonal das faixas
 
 ### Shadow Vocabulary
 - **Sombra de cartão** (`box-shadow: 0 2px 12px rgba(11, 100, 88, 0.08)` a `0 2px 14px rgba(11, 100, 88, 0.14)`): cartões, prints, pilha de valor.
-- **Sombra de mídia** (`box-shadow: 0 12px 36px rgba(11, 100, 88, 0.22)`): player da VSL e print em destaque.
+- **Sombra de mídia** (`box-shadow: 0 12px 36px rgba(11, 100, 88, 0.22)`): player da VSL, retrato da Cláudia no topo da variante sem vídeo e print em destaque.
 - **Brilho do CTA** (`box-shadow: 0 4px 20px rgba(242, 121, 15, 0.35)`, hover `0 8px 28px rgba(242, 121, 15, 0.45)`): só no botão de compra.
 - **Sombra do CTA fixo** (`box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.25)`): barra fixa sobre o conteúdo.
 
