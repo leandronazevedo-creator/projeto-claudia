@@ -61,8 +61,8 @@
   .pg-novideo .esc-headline { grid-area: title; font-size: clamp(38px, 3.6vw, 52px); margin-bottom: 22px; }
   .pg-novideo .day-ruler    { grid-area: ruler; margin: 8px 0 28px; max-width: 560px; }
   .pg-novideo .hero__sub    { grid-area: sub; margin: 0 0 28px; max-width: 600px; }
-  .pg-novideo .cta-block    { grid-area: cta; align-items: flex-start; }
-  .pg-novideo .cta-block .cta-micro { text-align: left; }
+  .pg-novideo .hero-split .cta-block { grid-area: cta; align-items: flex-start; }
+  .pg-novideo .hero-split .cta-block .cta-micro { text-align: left; }
 
   .hero-claudia {
     grid-area: photo;
@@ -86,3 +86,11 @@
 
 /* Bio: foto vertical, diferente da do topo */
 .pg-novideo .bio-photo img { aspect-ratio: 4 / 5; object-fit: cover; }
+
+/* Prova: o botão vem logo após as falas sobre escape; a barriga fica sob demanda */
+.pg-novideo .belly-more { text-align: center; margin-top: 40px; }
+.pg-novideo .belly-more[open] { text-align: initial; }
+.pg-novideo .belly-more[open] summary { display: flex; width: fit-content; margin: 0 auto 20px; }
+
+/* Preço: R$ 297 com o mesmo peso do parcelamento */
+.pg-novideo .price-main { color: var(--white); font-weight: 900; }
