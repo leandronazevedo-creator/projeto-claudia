@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <!-- Meta Pixel -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1664425621411014');
+  fbq('track', 'PageView');
+  fbq('track', 'ViewContent', {
+    content_name: 'Comunidade Diástase Nunca Mais',
+    content_category: 'Saúde e Bem-estar',
+    value: 297.00,
+    currency: 'BRL'
+  });
+  </script>
+  <noscript>
+  <img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1664425621411014&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel -->
+
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PNTZ1658DX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PNTZ1658DX');
+  </script>
+  <script>
+    // ViewContent: quando a página carrega
+    gtag('event', 'view_item', {
+      currency: 'BRL',
+      value: 297.00,
+      items: [{
+        item_name: 'Comunidade Diástase Nunca Mais',
+        item_category: 'Saúde e Bem-estar',
+        price: 297.00
+      }]
+    });
+
+    // begin_checkout: quando qualquer botão de CTA é clicado
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('a[href*="pay.kiwify.com.br"]')
+        .forEach(function(btn) {
+          btn.addEventListener('click', function() {
+            gtag('event', 'begin_checkout', {
+              currency: 'BRL',
+              value: 297.00,
+              items: [{
+                item_name: 'Comunidade Diástase Nunca Mais',
+                price: 297.00
+              }]
+            });
+          });
+        });
+    });
+
+    // Progresso de scroll (25%, 50%, 75%, 100%)
+    var scrollMarks = {25: false, 50: false, 75: false, 100: false};
+    window.addEventListener('scroll', function() {
+      var scrolled = (window.scrollY + window.innerHeight) /
+                     document.documentElement.scrollHeight * 100;
+      Object.keys(scrollMarks).forEach(function(mark) {
+        if (!scrollMarks[mark] && scrolled >= mark) {
+          scrollMarks[mark] = true;
+          gtag('event', 'scroll_depth', {
+            percent_scrolled: parseInt(mark),
+            page: 'pagina_vendas_escape_sem_video'
+          });
+        }
+      });
+    });
+  </script>
+  <!-- End Google tag -->
+
+  <!-- UTM passthrough: repassa os parâmetros utm da URL da página pro link de checkout do Kiwify -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var pageParams = new URLSearchParams(window.location.search);
+      var utmKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+      var utmParams = new URLSearchParams();
+      utmKeys.forEach(function(key) {
+        var value = pageParams.get(key);
+        if (value) utmParams.set(key, value);
+      });
+      if (utmParams.toString() === '') return;
+
+      document.querySelectorAll('a[href*="pay.kiwify.com.br"]').forEach(function(link) {
+        var url = new URL(link.href, window.location.href);
+        utmParams.forEach(function(value, key) {
+          url.searchParams.set(key, value);
+        });
+        link.href = url.toString();
+      });
+    });
+  </script>
+  <!-- End UTM passthrough -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escape de xixi ao tossir ou rir? · Cláudia Esquarcini</title>
+  <meta name="description" content="Tossiu, espirrou, deu risada e escapou? Não é coisa da idade. Escape e barriga que não volta têm a mesma raiz. Trabalhe essa musculatura em casa, com acompanhamento diário da Cláudia Esquarcini.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../escape/escape.css">
+  <link rel="stylesheet" href="sem-video.css">
+</head>
+<body class="pg-escape pg-novideo">
+
+<!-- STICKY CTA (mobile): aparece quando o hero sai da tela -->
+<div class="sticky-cta" id="stickyCta" aria-hidden="true" inert>
+  <a href="https://pay.kiwify.com.br/fna2soC">QUERO COMEÇAR HOJE</a>
+</div>
+
+<!-- ============================================================
+     1. HERO (branco): o dia inteiro numa linha
+     ============================================================ -->
+<section class="s-hero" id="hero">
+  <div class="container">
+    <div class="hero-split">
+
+      <div class="hero-split__copy">
+        <h1 class="hero__headline esc-headline">
+          Tossiu, espirrou, deu risada… e escapou.
+          <span class="hero__highlight">Não é coisa da idade.</span>
+        </h1>
+
+        <ol class="day-ruler" aria-label="Os momentos do dia em que o escape aparece">
+          <li><time>07:10</time><span>espirro</span></li>
+          <li><time>09:30</time><span>mercado</span></li>
+          <li><time>12:40</time><span>risada</span></li>
+          <li><time>16:00</time><span>neto</span></li>
+          <li><time>19:00</time><span>bolsa</span></li>
+          <li><time>22:30</time><span>cama</span></li>
+        </ol>
+
+        <figure class="hero-claudia">
+          <picture>
+            <source srcset="../img/claudia_hero.webp" type="image/webp">
+            <img src="../img/claudia_hero.jpg" alt="Cláudia Esquarcini, sorrindo, de blazer verde" width="900" height="900" fetchpriority="high">
+          </picture>
+          <figcaption><strong>Com a Cláudia Esquarcini</strong>Especialista em diástase abdominal · Mais de 10 mil alunas pelo mundo</figcaption>
+        </figure>
+
+        <p class="hero__sub">
+          O escape ao tossir, rir ou pular costuma andar junto com a barriga que não volta: os dois vêm da musculatura
+          que deixou de sustentar. Trabalhe essa musculatura <strong>sem cirurgia e sem sair de casa</strong>, com acompanhamento diário da Cláudia.
+        </p>
+
+        <div class="cta-block">
+          <a href="https://pay.kiwify.com.br/fna2soC" class="btn-primary btn-xl">QUERO COMEÇAR HOJE</a>
+          <p class="cta-micro">Garantia de 7 dias &middot; Acesso imediato &middot; 12x de R$&nbsp;30,90</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="wave" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 48" preserveAspectRatio="none"><path d="M0,24 C360,54 1080,0 1440,30 L1440,48 L0,48 Z" fill="#E8F5EE"/></svg></div>
+</section>
+
+<!-- ============================================================
+     2. UM DIA DE ESCAPES (verde-pálido): trilho de horários
+     ============================================================ -->
+<section class="s-day" id="dia">
+  <div class="container">
+    <h2 class="section-title section-title--center">Um dia comum. Do primeiro espirro até a hora de deitar.</h2>
+
+    <ol class="day-rail">
+      <li class="day-moment">
+        <time class="day-moment__time">07:10</time>
+        <div class="day-moment__body">
+          <h3>O primeiro espirro do dia.</h3>
+          <p>Você cruza as pernas antes mesmo de pensar. O corpo já aprendeu a se proteger sozinho.</p>
+        </div>
+      </li>
+      <li class="day-moment">
+        <time class="day-moment__time">09:30</time>
+        <div class="day-moment__body">
+          <h3>No mercado, a primeira coisa que você procura é o banheiro.</h3>
+          <p>Antes da lista de compras, antes do caixa. Saber onde fica virou parte do caminho.</p>
+        </div>
+      </li>
+      <li class="day-moment">
+        <time class="day-moment__time">12:40</time>
+        <div class="day-moment__body">
+          <h3>Alguém conta uma piada no almoço.</h3>
+          <p>E você ri pela metade, segurando. A risada inteira ficou para depois.</p>
+        </div>
+      </li>
+      <li class="day-moment">
+        <time class="day-moment__time">16:00</time>
+        <div class="day-moment__body">
+          <h3>O neto chama pra pular.</h3>
+          <p>Você inventa uma desculpa e fica sentada olhando. Pular, correr, dançar: tudo virou risco.</p>
+        </div>
+      </li>
+      <li class="day-moment">
+        <time class="day-moment__time">19:00</time>
+        <div class="day-moment__body">
+          <h3>Absorvente na bolsa. E mais um de reserva.</h3>
+          <p>Todo dia, para qualquer saída. A roupa escura também não é por acaso.</p>
+        </div>
+      </li>
+      <li class="day-moment">
+        <time class="day-moment__time">22:30</time>
+        <div class="day-moment__body">
+          <h3>Você deita pensando que amanhã é tudo de novo.</h3>
+          <p>E que talvez seja assim mesmo, porque disseram que é a idade, que é normal depois dos filhos.</p>
+        </div>
+      </li>
+    </ol>
+
+    <p class="day-close">Nenhuma dessas cenas é algo que você precisa aceitar calada. Elas têm uma causa, <strong>e ela fica bem atrás da sua barriga.</strong></p>
+  </div>
+  <div class="wave" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 48" preserveAspectRatio="none"><path d="M0,30 C480,0 960,48 1440,16 L1440,48 L0,48 Z" fill="#0B6458"/></svg></div>
+</section>
+
+<!-- ============================================================
+     3. A CAUSA (verde-profundo): a mesma pressão, dois caminhos
+     ============================================================ -->
+<section class="s-reveal s-cause" id="causa">
+  <div class="container">
+    <h2 class="section-title section-title--light">O que segura o xixi é o mesmo que segura a barriga. <span class="txt-orange">Quando um falha, o outro sente.</span></h2>
+
+    <div class="cause-layout">
+      <figure class="cause-figure">
+        <svg viewBox="0 0 280 320" role="img" aria-labelledby="cause-fig-title" class="cause-svg">
+          <title id="cause-fig-title">Esquema do tronco: o diafragma em cima, a parede abdominal na frente e o assoalho pélvico embaixo. A pressão de uma tosse empurra a barriga para fora e o assoalho para baixo.</title>
+          <defs>
+            <marker id="arrowhead" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="#FFB25C"/>
+            </marker>
+          </defs>
+          <!-- tronco -->
+          <path d="M70,40 C70,22 210,22 210,40 L222,250 C222,276 58,276 58,250 Z" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.35)" stroke-width="2"/>
+          <!-- diafragma -->
+          <path d="M74,78 C110,52 170,52 206,78" fill="none" stroke="#7FD9C4" stroke-width="5" stroke-linecap="round"/>
+          <!-- parede abdominal (frente, à direita) com afastamento -->
+          <path d="M210,96 L214,158" stroke="#7FD9C4" stroke-width="5" stroke-linecap="round"/>
+          <path d="M216,184 L220,236" stroke="#7FD9C4" stroke-width="5" stroke-linecap="round"/>
+          <!-- assoalho pélvico -->
+          <path d="M66,248 C110,272 170,272 214,248" fill="none" stroke="#7FD9C4" stroke-width="5" stroke-linecap="round"/>
+          <!-- pressão -->
+          <circle cx="140" cy="160" r="20" fill="rgba(242,121,15,0.22)" stroke="#FFB25C" stroke-width="2"/>
+          <path d="M162,166 L238,172" stroke="#FFB25C" stroke-width="3" marker-end="url(#arrowhead)"/>
+          <path d="M140,182 L140,286" stroke="#FFB25C" stroke-width="3" marker-end="url(#arrowhead)"/>
+          <text x="140" y="44" text-anchor="middle" class="cause-svg__label">diafragma</text>
+          <text x="240" y="150" text-anchor="middle" class="cause-svg__label">barriga</text>
+          <text x="140" y="312" text-anchor="middle" class="cause-svg__label">assoalho pélvico</text>
+        </svg>
+        <figcaption>A pressão de uma tosse procura saída: para a frente, onde a barriga cede, e para baixo, onde está o assoalho pélvico.</figcaption>
+      </figure>
+
+      <div class="reveal-body cause-body">
+        <p>
+          Diafragma, abdômen profundo e assoalho pélvico trabalham juntos, como as paredes de uma mesma caixa.
+          Depois da gravidez (ou com o ganho de peso), os músculos do abdômen se afastam: é a <strong>diástase</strong>.
+          A parede da frente deixa de sustentar, e o fundo da caixa passa a receber a pressão sozinho.
+        </p>
+        <p>
+          Por isso tantas mulheres têm as duas coisas ao mesmo tempo: <strong>a barriga estufada que não volta e o escape
+          ao tossir, rir ou pular.</strong> Não é falta de força de vontade nem idade. É sustentação que está faltando.
+        </p>
+        <p>
+          E o abdominal comum piora as duas. Crunch, prancha pesada e agachamento com carga aumentam a pressão dentro
+          do abdômen e empurram ainda mais para fora e para baixo. O caminho é o contrário: primeiro respiração,
+          depois ativação profunda (incluindo o períneo), depois fortalecimento. Na ordem certa, com acompanhamento.
+        </p>
+        <p class="cause-note">O escape também pode ter outras causas. Se ele for intenso, vier com dor ou tiver começado de repente, converse com seu médico.</p>
+      </div>
+    </div>
+  </div>
+  <div class="wave" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 48" preserveAspectRatio="none"><path d="M0,16 C480,48 960,0 1440,32 L1440,48 L0,48 Z" fill="#FFFFFF"/></svg></div>
+</section>
+
+<!-- ============================================================
+     4. AS ALUNAS (branco): o print da live em destaque
+     ============================================================ -->
+<section class="s-voices" id="alunas">
+  <div class="container">
+    <h2 class="section-title section-title--center">No meio da aula ao vivo, elas contaram.</h2>
+
+    <div class="voices-layout">
+      <button type="button" class="print voices-print" data-full="../img/depoimentos/comentarios-live.webp">
+        <picture>
+          <source srcset="../img/depoimentos/comentarios-live.webp" type="image/webp">
+          <img src="../img/depoimentos/comentarios-live.jpg" alt="Print de comentários de alunas durante a aula ao vivo. Uma escreve: escape xixi melhorou muito, barriga tá murchando. Outra: muito feliz em todas as áreas, no escape de xixi e no abdômen." width="666" height="1280" loading="lazy">
+        </picture>
+      </button>
+
+      <div class="voices-quotes">
+        <blockquote class="voice">
+          <p>“escape xixi melhorou muito barriga tá murchando ebaaaa”</p>
+          <footer>Aluna, nos comentários da aula ao vivo</footer>
+        </blockquote>
+        <blockquote class="voice">
+          <p>“muito feliz em todas as áreas, no escape de xixi e no abdomem. Gratidão”</p>
+          <footer>Aluna, nos comentários da aula ao vivo</footer>
+        </blockquote>
+        <p class="voices-aside">Escrito do jeito que elas digitaram, no mesmo minuto. Escape e barriga melhorando juntos, como a causa explica.</p>
+        <p class="disclaimer-line voices-disclaimer">Relatos individuais de alunas, usados com autorização. Os resultados podem variar de pessoa para pessoa.</p>
+      </div>
+    </div>
+
+    <h3 class="voices-more">E a barriga, que vem junto</h3>
+    <div class="ba-grid esc-ba-grid">
+      <button type="button" class="print ba-item" data-full="../img/antes-depois/antes-depois-02.webp">
+        <picture>
+          <source srcset="../img/antes-depois/antes-depois-02.webp" type="image/webp">
+          <img src="../img/antes-depois/antes-depois-02.jpg" alt="Aluna da comunidade de lado, comparando o antes e os primeiros 15 dias de programa, com a barriga visivelmente menor" width="808" height="951" loading="lazy">
+        </picture>
+      </button>
+      <button type="button" class="print ba-item" data-full="../img/antes-depois/antes-depois-01.webp">
+        <picture>
+          <source srcset="../img/antes-depois/antes-depois-01.webp" type="image/webp">
+          <img src="../img/antes-depois/antes-depois-01.jpg" alt="Antes e depois de aluna da comunidade, de frente, mostrando a redução do volume da barriga" width="798" height="522" loading="lazy">
+        </picture>
+      </button>
+      <button type="button" class="print ba-item" data-full="../img/antes-depois/antes-depois-06.webp">
+        <picture>
+          <source srcset="../img/antes-depois/antes-depois-06.webp" type="image/webp">
+          <img src="../img/antes-depois/antes-depois-06.jpg" alt="Antes e depois de aluna da comunidade, com a barriga menor e a postura mais firme na foto da direita" width="828" height="818" loading="lazy">
+        </picture>
+      </button>
+    </div>
+
+    <div class="print-grid esc-print-grid">
+      <button type="button" class="print" data-full="../img/depoimentos/aluna-54-anos.webp">
+        <picture>
+          <source srcset="../img/depoimentos/aluna-54-anos.webp" type="image/webp">
+          <img src="../img/depoimentos/aluna-54-anos.jpg" alt="Print de conversa com foto do resultado de aluna de 54 anos relatando que todos diziam que ela não conseguiria por causa da idade e da menopausa" width="626" height="1280" loading="lazy">
+        </picture>
+      </button>
+      <button type="button" class="print" data-full="../img/depoimentos/cintas-resultado.webp">
+        <picture>
+          <source srcset="../img/depoimentos/cintas-resultado.webp" type="image/webp">
+          <img src="../img/depoimentos/cintas-resultado.jpg" alt="Print de aluna com fotos do resultado relatando que passou a vida usando cintas modeladoras e encontrou um caminho gentil" width="828" height="898" loading="lazy">
+        </picture>
+      </button>
+      <button type="button" class="print" data-full="../img/depoimentos/fran-historia.webp">
+        <picture>
+          <source srcset="../img/depoimentos/fran-historia.webp" type="image/webp">
+          <img src="../img/depoimentos/fran-historia.jpg" alt="Print de conversa da aluna Fran contando que achou que não ia dar resultado e no quarto dia vestiu uma calça e viu que a barriga tinha diminuído" width="828" height="1146" loading="lazy">
+        </picture>
+      </button>
+    </div>
+    <p class="disclaimer-line">Resultados individuais. Depoimentos reais de alunas, usados com autorização.</p>
+
+    <div class="cta-block esc-cta-gap">
+      <a href="https://pay.kiwify.com.br/fna2soC" class="btn-primary btn-xl">QUERO COMEÇAR HOJE</a>
+      <p class="cta-micro">Garantia de 7 dias &middot; Acesso imediato &middot; 12x de R$&nbsp;30,90</p>
+    </div>
+  </div>
+  <div class="wave" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 48" preserveAspectRatio="none"><path d="M0,30 C360,0 1080,48 1440,12 L1440,48 L0,48 Z" fill="#E8F5EE"/></svg></div>
+</section>
+
+<!-- ============================================================
+     5. A JORNADA (verde-pálido): períneo desde o primeiro dia
+     ============================================================ -->
+<section class="s-journey esc-journey" id="jornada">
+  <div class="container">
+    <h2 class="section-title section-title--center">O períneo entra na primeira semana. A Cláudia, logo depois.</h2>
+
+    <ol class="day-rail journey-rail" aria-label="Sua jornada de 6 meses">
+      <li class="day-moment">
+        <span class="day-moment__time">Hoje</span>
+        <div class="day-moment__body">
+          <h3>Você entra e sabe de onde está partindo</h3>
+          <p>Faz o autoexame da diástase e tira as medidas, para acompanhar cada passo da evolução.</p>
+        </div>
+      </li>
+      <li class="day-moment">
+        <span class="day-moment__time">1–7<small>dias</small></span>
+        <div class="day-moment__body">
+          <h3>Módulo Iniciante: respiração e ativação de períneo</h3>
+          <p>Respiração diafragmática, massagem, liberação de costela e <strong>ativação do assoalho pélvico</strong>. A base que ninguém te ensinou. <em>Alunas relatam sentir as primeiras diferenças já nesta fase.</em></p>
+        </div>
+      </li>
+      <li class="day-moment">
+        <span class="day-moment__time">8+<small>dias</small></span>
+        <div class="day-moment__body">
+          <h3>A Cláudia passa a te acompanhar</h3>
+          <p>Você entra no grupo do WhatsApp e a Cláudia te acompanha <strong>de segunda a sexta, por 6 meses.</strong> Exercício novo todo dia útil, dúvidas respondidas por ela. Inclusive as que dá vergonha de perguntar.</p>
+        </div>
+      </li>
+      <li class="day-moment">
+        <span class="day-moment__time">6<small>meses</small></span>
+        <div class="day-moment__body">
+          <h3>Pompoarismo, corpo completo e bônus</h3>
+          <p>Aula de Pompoarismo para aprofundar o trabalho do assoalho pélvico, treino completo com Ana Alice (braço e perna), Desafio Barriga Firme e E-book de receitas.</p>
+        </div>
+      </li>
+    </ol>
+
+    <div class="journey-highlight">
+      <p>De 15 a 20 minutos por dia, em casa, sem equipamento. <strong>Ninguém precisa saber o que você está treinando.</strong></p>
+    </div>
+  </div>
+  <div class="wave" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 48" preserveAspectRatio="none"><path d="M0,34 C480,0 960,48 1440,14 L1440,48 L0,48 Z" fill="#FFFFFF"/></svg></div>
+</section>
+
+<!-- ============================================================
+     6. OFERTA (verde-pálido, price-card verde-profundo)
+     ============================================================ -->
+<section class="s-offer" id="oferta">
+  <div class="container">
+    <h2 class="section-title section-title--center">Tudo que você recebe hoje</h2>
+
+    <div class="offer-layout">
+      <div class="value-stack">
+        <div class="stack-row">
+          <span class="stack-label">Plataforma completa: módulos com 6 meses de acesso</span>
+          <span class="stack-val">R$&nbsp;497</span>
+        </div>
+        <div class="stack-row">
+          <span class="stack-label">Acompanhamento diário da Cláudia no WhatsApp por 6 meses</span>
+          <span class="stack-val">R$&nbsp;397</span>
+        </div>
+        <div class="stack-row">
+          <span class="stack-label">Treino completo com Ana Alice: 10 aulas</span>
+          <span class="stack-val">R$&nbsp;197</span>
+        </div>
+        <div class="stack-row stack-row--bonus">
+          <span class="stack-label">Bônus: Aula de Pompoarismo</span>
+          <span class="stack-val">R$&nbsp;67</span>
+        </div>
+        <div class="stack-row stack-row--bonus">
+          <span class="stack-label">Bônus: Desafio Barriga Firme 7 Dias</span>
+          <span class="stack-val">R$&nbsp;97</span>
+        </div>
+        <div class="stack-row stack-row--bonus">
+          <span class="stack-label">Bônus: E-book Receitas Práticas para Secar</span>
+          <span class="stack-val">R$&nbsp;37</span>
+        </div>
+        <div class="stack-total">
+          <span>Valor total</span>
+          <span>R$&nbsp;1.292</span>
+        </div>
+      </div>
+
+      <div class="price-card" id="checkout">
+        <p class="price-from">De <s>R$&nbsp;497</s> por</p>
+        <p class="price-main">R$&nbsp;297</p>
+        <p class="price-or">ou</p>
+        <p class="price-installment">12x de <strong>R$&nbsp;30,90</strong></p>
+        <p class="price-compare">Cerca de R$&nbsp;1,65 por dia nos 6 meses de acompanhamento.</p>
+        <a href="https://pay.kiwify.com.br/fna2soC" class="btn-primary btn-xl">QUERO COMEÇAR HOJE</a>
+        <p class="cta-micro cta-micro--light">Garantia de 7 dias &middot; Acesso imediato &middot; Pagamento seguro via Kiwify</p>
+      </div>
+    </div>
+  </div>
+  <div class="wave" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 48" preserveAspectRatio="none"><path d="M0,34 C480,0 960,48 1440,14 L1440,48 L0,48 Z" fill="#E8F5EE"/></svg></div>
+</section>
+
+<!-- ============================================================
+     7. GARANTIA (branco)
+     ============================================================ -->
+<section class="s-guarantee" id="garantia">
+  <div class="container">
+    <div class="guarantee-inner">
+      <div class="guarantee-seal" aria-label="Garantia de 7 dias incondicional">
+        <div class="seal">
+          <div class="seal__num">7</div>
+          <div class="seal__days">dias</div>
+          <div class="seal__text">Garantia<br>Incondicional</div>
+        </div>
+      </div>
+      <div class="guarantee-text">
+        <h2>Teste por 7 dias. O risco é todo nosso.</h2>
+        <p>
+          Entre na comunidade, faça as primeiras aulas, participe do grupo da Cláudia no WhatsApp.
+          Se você decidir que não é pra você, por qualquer motivo, é só pedir: devolvemos
+          <strong>100% do valor</strong>, sem perguntas e sem burocracia, direto pela Kiwify.
+        </p>
+        <div class="guarantee-note">
+          <p>
+            Muitas alunas contam que quase não começaram: "achei que era coisa de internet",
+            "medo de mais uma frustração". A garantia existe exatamente pra isso.
+            <strong>Você não precisa acreditar antes. Precisa só testar.</strong>
+          </p>
+        </div>
+        <a href="https://pay.kiwify.com.br/fna2soC" class="btn-primary">QUERO TESTAR SEM RISCO</a>
+        <p class="cta-micro">Garantia processada pela Kiwify &middot; 7 dias &middot; 100% do valor</p>
+      </div>
+    </div>
+  </div>
+  <div class="wave" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 48" preserveAspectRatio="none"><path d="M0,16 C480,48 960,4 1440,36 L1440,48 L0,48 Z" fill="#FFFFFF"/></svg></div>
+</section>
+
+<!-- ============================================================
+     8. QUEM É A CLÁUDIA (verde-pálido)
+     ============================================================ -->
+<section class="s-bio" id="bio">
+  <div class="container">
+    <div class="bio-inner">
+      <div class="bio-photo">
+        <picture>
+          <source srcset="../img/claudia_fundo_teal.webp" type="image/webp">
+          <img src="../img/claudia_fundo_teal.png" alt="Cláudia Esquarcini, especialista em tratamento de diástase abdominal" width="480" height="480" loading="lazy" class="bio-photo__img">
+        </picture>
+      </div>
+      <div class="bio-content">
+        <h2>Cláudia Esquarcini</h2>
+        <p class="bio-credential">Especialista em Tratamento de Diástase Abdominal &middot; Mais de 10 mil alunas pelo mundo</p>
+        <p>
+          Cláudia Esquarcini dedica sua carreira ao tratamento da diástase abdominal: a condição que afeta
+          milhões de mulheres e que quase ninguém explica direito.
+        </p>
+        <p>
+          Ela conhece a mulher que chega até ela. A que já fez dieta, academia e abdominal, que ouviu que
+          barriga e escape eram coisa da idade, e que nunca recebeu a informação de que o problema era
+          sustentação.
+        </p>
+        <p>
+          Mais de 10 mil alunas pelo mundo depois, os relatos se repetem: barriga desinchando, escapes
+          melhorando, mulheres se reconhecendo de novo no espelho.
+        </p>
+        <blockquote class="claudia-quote claudia-quote--bio">
+          <p>"A Cláudia é paciente, tranquila e se importa com as alunas."</p>
+          <footer>Palavras de aluna, na pesquisa da comunidade</footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+  <div class="wave" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 48" preserveAspectRatio="none"><path d="M0,30 C480,0 960,48 1440,16 L1440,48 L0,48 Z" fill="#E8F5EE"/></svg></div>
+</section>
+
+<!-- ============================================================
+     9. FAQ (branco)
+     ============================================================ -->
+<section class="s-faq" id="faq">
+  <div class="container">
+    <h2 class="section-title section-title--center">As dúvidas de verdade, respondidas</h2>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-a1">
+          "Eu procurei o programa por causa do escape, não da barriga. É pra mim?"
+          <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="faq-a" id="faq-a1" hidden>
+          <p>Muitas vezes as duas coisas vêm juntas, porque têm a mesma raiz: a musculatura profunda que deixou de sustentar. O programa trabalha o assoalho pélvico desde o Módulo Iniciante e ainda tem a aula bônus de Pompoarismo. Alunas relatam melhora nos escapes ao tossir, rir e pular. Os resultados variam de pessoa para pessoa.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-a2">
+          "Fazer abdominal não ia ajudar a segurar?"
+          <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="faq-a" id="faq-a2" hidden>
+          <p>O abdominal comum aumenta a pressão dentro do abdômen, e essa pressão empurra a barriga para fora e o assoalho pélvico para baixo. Por isso o método começa pela respiração e pela ativação profunda, e só depois fortalece.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-a3">
+          "Tenho vergonha de falar disso. Vou ter que me expor no grupo?"
+          <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="faq-a" id="faq-a3" hidden>
+          <p>Não. Você faz as aulas em casa e participa do grupo só se e quando quiser. Dúvidas podem ser tiradas com a Cláudia, e a maioria das alunas tem exatamente as mesmas queixas que você.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-a4">
+          "Tenho mais de 55 anos e já passei da menopausa. Consigo acompanhar?"
+          <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="faq-a" id="faq-a4" hidden>
+          <p>A maioria das alunas tem entre 40 e 65 anos, e há alunas de quase 70. Os exercícios respeitam seu ritmo, começando pela respiração.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-a5">
+          "Isso substitui o médico ou a fisioterapia?"
+          <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="faq-a" id="faq-a5" hidden>
+          <p>Não. O programa não substitui avaliação e acompanhamento médico. Se o escape for intenso, vier com dor ou tiver começado de repente, procure seu médico.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-a6">
+          "Quanto tempo por dia?"
+          <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="faq-a" id="faq-a6" hidden>
+          <p>De 15 a 20 minutos, em casa, sem equipamento. Os exercícios cabem na rotina real: no quarto, na sala, no horário que funcionar pra você.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-a7">
+          "Como recebo o acesso?"
+          <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="faq-a" id="faq-a7" hidden>
+          <p>Imediatamente após a confirmação do pagamento, você recebe um e-mail da Kiwify com seu login. Em poucos minutos você já está no primeiro módulo, e o link do grupo do WhatsApp chega junto com o acesso.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-a8">
+          "Como funciona a garantia?"
+          <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="faq-a" id="faq-a8" hidden>
+          <p>Você tem 7 dias corridos a partir da compra. É só pedir o reembolso pelo suporte da Kiwify, sem precisar explicar nada. 100% do valor devolvido.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wave" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 48" preserveAspectRatio="none"><path d="M0,14 C480,48 960,0 1440,32 L1440,48 L0,48 Z" fill="#0B6458"/></svg></div>
+</section>
+
+<!-- ============================================================
+     10. CTA FINAL (verde-profundo): o dia seguinte
+     ============================================================ -->
+<section class="s-final" id="cta-final">
+  <div class="container">
+    <p class="final-clock"><time>07:10</time></p>
+    <h2 class="section-title section-title--light section-title--center">
+      Amanhã o dia começa no mesmo horário. A diferença é o que você decide hoje.
+    </h2>
+    <p class="final-text">
+      Você já ouviu que escape e barriga são coisa da idade. Já até repetiu isso pra você mesma.
+      As mais de 10 mil alunas da Cláudia também ouviram. A diferença entre elas e quem continua
+      contando os banheiros do caminho é uma decisão do tamanho de 15 minutos por dia.
+    </p>
+    <div class="final-price">
+      <p class="final-install">12x de <strong>R$&nbsp;30,90</strong></p>
+      <p class="final-or">ou R$&nbsp;297 à vista</p>
+    </div>
+    <a href="https://pay.kiwify.com.br/fna2soC" class="btn-primary btn-xl">QUERO COMEÇAR HOJE</a>
+    <p class="cta-micro cta-micro--light">Garantia de 7 dias &middot; Acesso imediato &middot; Pagamento seguro via Kiwify</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <p class="footer__disclaimer">Os resultados podem variar de pessoa para pessoa. Depoimentos são relatos individuais de alunas. Este programa não substitui avaliação e acompanhamento médico.</p>
+    <p>&copy; 2026 Cláudia Esquarcini &middot; Comunidade Diástase Nunca Mais. Todos os direitos reservados.</p>
+    <p>
+      <!-- PLACEHOLDER: adicionar links reais de Política de Privacidade e Termos de Uso -->
+      <a href="#">Política de Privacidade</a> &middot; <a href="#">Termos de Uso</a>
+    </p>
+  </div>
+</footer>
+
+<!-- LIGHTBOX para ampliar os prints -->
+<div class="lightbox" id="lightbox" hidden>
+  <button type="button" class="lightbox__close" aria-label="Fechar imagem ampliada"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <img alt="Print de depoimento ampliado" class="lightbox__img">
+</div>
+
+<script src="../js/script.js"></script>
+<script src="../escape/escape.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('a[href*="pay.kiwify.com.br"]')
+    .forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        fbq('track', 'InitiateCheckout', {
+          content_name: 'Comunidade Diástase Nunca Mais',
+          value: 297.00,
+          currency: 'BRL'
+        });
+      });
+    });
+});
+</script>
+</body>
+</html>
