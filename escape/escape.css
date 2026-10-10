@@ -146,7 +146,7 @@
   padding-top: 6px;
   transition: color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
-.day-moment.is-lit .day-moment__time { color: var(--orange-ink); }
+.day-moment.is-lit .day-moment__time { color: var(--orange-h); }
 .day-moment.is-lit::before {
   background: var(--orange);
   border-color: var(--orange);
@@ -336,9 +336,11 @@
 
 /* Primeira dobra no desktop: título, régua, VSL e CTA cabem em 900px */
 @media (min-width: 1024px) {
-  .pg-escape .hero__center { padding-top: 48px; }
-  .pg-escape .esc-headline { font-size: clamp(30px, 4vw, 52px); }
-  .pg-escape vturb-smartplayer { max-width: 640px; }
+  .pg-escape .hero__center { padding-top: 24px; }
+  .pg-escape .esc-headline { font-size: clamp(30px, 4vw, 52px); margin-bottom: 14px; }
+  .pg-escape .hero__sub { max-width: 780px; margin-bottom: 22px; }
+  .pg-escape .day-ruler { margin-bottom: 20px; }
+  .pg-escape vturb-smartplayer { max-width: 560px; margin-bottom: 22px !important; }
 }
 
 /* Ajustes de acabamento desta página (contraste e bordas laterais herdadas) */
@@ -351,3 +353,25 @@
   border-top: 1px solid rgba(11, 100, 88, 0.2);
   padding: 18px 0 0;
 }
+
+/* Jornada no mesmo trilho do dia: períodos em numerais, sem selos nem caixas */
+.journey-rail { margin-bottom: 40px; }
+.journey-rail .day-moment__time {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: clamp(26px, 6vw, 40px);
+}
+.journey-rail .day-moment__time small {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--text-mid);
+  margin-top: 4px;
+}
+.journey-rail .day-moment__body strong { color: var(--text-dark); }
+.journey-rail .day-moment__body em { color: var(--green-deep); }
+
+/* Ícones desenhados no FAQ e no lightbox */
+.pg-escape .faq-icon { display: inline-flex; font-size: 0; }
+.pg-escape .lightbox__close { display: inline-flex; align-items: center; justify-content: center; }

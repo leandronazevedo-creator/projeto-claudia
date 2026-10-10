@@ -1,23 +1,22 @@
 /* ============================================================
-   Trilho do dia: preenche com a rolagem e acende cada horário
+   Trilhos do dia e da jornada: preenchem com a rolagem e acendem cada horário
    ============================================================ */
 (function () {
-  var rail = document.querySelector('.day-rail');
-  if (!rail) return;
-  var moments = rail.querySelectorAll('.day-moment');
+  var rails = document.querySelectorAll('.day-rail');
+  if (!rails.length) return;
   var ticking = false;
 
   function update() {
     ticking = false;
-    var rect = rail.getBoundingClientRect();
     var mark = window.innerHeight * 0.62;
-    var p = (mark - rect.top) / rect.height;
-    p = Math.max(0, Math.min(1, p));
-    rail.style.setProperty('--p', p.toFixed(4));
-
-    moments.forEach(function (m) {
-      var t = m.querySelector('.day-moment__time').getBoundingClientRect();
-      m.classList.toggle('is-lit', t.top + t.height / 2 <= mark);
+    rails.forEach(function (rail) {
+      var rect = rail.getBoundingClientRect();
+      var p = Math.max(0, Math.min(1, (mark - rect.top) / rect.height));
+      rail.style.setProperty('--p', p.toFixed(4));
+      rail.querySelectorAll('.day-moment').forEach(function (m) {
+        var t = m.querySelector('.day-moment__time').getBoundingClientRect();
+        m.classList.toggle('is-lit', t.top + t.height / 2 <= mark);
+      });
     });
   }
 
@@ -31,4 +30,15 @@
   window.addEventListener('scroll', onScroll, { passive: true });
   window.addEventListener('resize', onScroll);
   update();
+})();
+
+/* ============================================================
+   CTA fixo: fora do foco do teclado enquanto está escondido
+   ============================================================ */
+(function () {
+  var sticky = document.getElementById('stickyCta');
+  if (!sticky || typeof MutationObserver === 'undefined') return;
+  new MutationObserver(function () {
+    sticky.inert = !sticky.classList.contains('is-visible');
+  }).observe(sticky, { attributes: true, attributeFilter: ['class'] });
 })();
