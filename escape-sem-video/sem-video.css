@@ -92,6 +92,5 @@
 .pg-novideo .belly-more[open] { text-align: initial; }
 .pg-novideo .belly-more[open] summary { display: flex; width: fit-content; margin: 0 auto 20px; }
 
-/* Preço: R$ 297 com o mesmo peso do parcelamento, e o total parcelado à vista */
+/* Preço: R$ 297 com o mesmo peso do parcelamento */
 .pg-novideo .price-main { color: var(--white); font-weight: 900; }
-.price-total { font-size: 15px; color: rgba(255, 255, 255, 0.85); margin: -4px 0 10px; }
