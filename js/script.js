@@ -53,7 +53,11 @@ document.querySelectorAll('.exam-opt').forEach(function (btn) {
 
     this.classList.add('is-active');
     var result = document.getElementById(this.getAttribute('data-result'));
-    if (result) result.hidden = false;
+    if (result) {
+      result.hidden = false;
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      result.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'center' });
+    }
   });
 });
 

@@ -1047,3 +1047,108 @@ vturb-smartplayer {
   .print-grid { columns: 4; }
   .bio-photo img { max-width: 400px; }
 }
+
+/* ============================================================
+   CRÍTICA 2026-10: Cláudia cedo, autoexame com próximo passo,
+   prova enxuta
+   ============================================================ */
+
+/* Capa da VSL enquanto o player não carrega: nunca uma caixa preta */
+.vturb-player-placeholder {
+  background: var(--green-deep) url(../img/claudia_hero.webp) center 22% / cover no-repeat !important;
+}
+
+/* Faixa "quem te acompanha" no início das provas */
+.companion {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  max-width: 640px;
+  margin: 0 auto 48px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid rgba(11, 100, 88, 0.16);
+}
+.companion picture { flex: 0 0 96px; }
+.companion img {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 12px 36px rgba(11, 100, 88, 0.22);
+}
+.companion figcaption { font-size: 17px; line-height: 1.55; color: var(--text-mid); }
+.companion figcaption strong {
+  display: block;
+  font-size: 19px;
+  font-weight: 800;
+  color: var(--green-deep);
+  margin-bottom: 4px;
+}
+
+/* Autoexame: quarto resultado e próximo passo */
+.exam-result--none { background: rgba(255, 255, 255, 0.1); border-left: 4px solid rgba(255, 255, 255, 0.6); }
+.exam-next { margin-top: 12px; }
+.exam-next a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-weight: 800;
+  color: var(--white);
+  text-decoration: underline;
+  text-decoration-color: var(--orange-soft);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+.exam-next a::after { content: '\2192'; margin-left: 8px; }
+.selfexam__results { scroll-margin-bottom: 96px; }
+
+/* Prova: 4 prints à vista, o resto sob demanda */
+.more-prints { margin: 4px 0 8px; }
+.more-prints summary {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  padding: 10px 20px;
+  border: 2px solid var(--green-mid);
+  border-radius: var(--radius);
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--green-deep);
+  background: var(--white);
+  cursor: pointer;
+  list-style: none;
+}
+.more-prints summary::-webkit-details-marker { display: none; }
+.more-prints[open] summary { margin-bottom: 16px; }
+.more-prints summary:focus-visible { outline: 3px solid var(--orange-ink, #B4530A); outline-offset: 3px; }
+
+/* O que muda: três resultados em lista, sem ícones */
+.changes-list {
+  list-style: none;
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.changes-list li { padding-top: 22px; border-top: 1px solid rgba(11, 100, 88, 0.16); }
+.changes-list li:first-child { border-top: none; padding-top: 0; }
+.changes-list h3 {
+  font-size: clamp(21px, 3.4vw, 26px);
+  font-weight: 900;
+  color: var(--green-deep);
+  margin-bottom: 6px;
+}
+.changes-list p { font-size: 18px; color: var(--text-mid); line-height: 1.6; }
+
+.faq-a a { color: var(--green-deep); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+
+@media (min-width: 768px) {
+  .companion picture { flex-basis: 112px; }
+  .companion img { width: 112px; height: 112px; }
+  .selfexam__options { flex-wrap: wrap; }
+  .exam-opt { flex: 1 1 calc(50% - 10px); }
+}
+@media (min-width: 1024px) {
+  .exam-opt { flex: 1 1 0; }
+}
