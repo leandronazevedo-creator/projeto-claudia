@@ -1,0 +1,9 @@
+# Arquivos de trabalho que não devem ser publicados
+.claude
+.impeccable
+PRODUCT.md
+DESIGN.md
+*.webp.json
+
+# Página de escape com vídeo: guardada no repositório, fora do ar por enquanto
+escape/
