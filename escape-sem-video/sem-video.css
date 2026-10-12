@@ -94,3 +94,26 @@
 
 /* Preço: R$ 297 com o mesmo peso do parcelamento */
 .pg-novideo .price-main { color: var(--white); font-weight: 900; }
+
+/* Depoimentos de escape: prints reais, nomes e fotos ocultados */
+.pg-novideo .voice--lead p { color: var(--orange-ink); }
+.leak-prints {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 980px;
+  margin: 56px auto 12px;
+}
+.leak-print { margin: 0; }
+.leak-print .print { margin-bottom: 0; }
+.leak-print figcaption {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-mid);
+  text-align: center;
+  padding-top: 8px;
+}
+@media (min-width: 768px) {
+  .leak-prints { grid-template-columns: repeat(2, 1fr); align-items: start; }
+  .leak-prints .leak-print:last-child { grid-column: 2; grid-row: 1 / span 2; }
+}
