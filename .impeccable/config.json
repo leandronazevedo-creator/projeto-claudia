@@ -11,6 +11,12 @@
         ],
         "createdAt": "2026-11-14T17:15:40.879Z",
         "reason": "Claude: lightbox img gets its src from js/script.js on click; same pattern as index.html"
+      },
+      {
+        "rule": "overused-font",
+        "value": "inter",
+        "createdAt": "2026-11-14T17:17:06.354Z",
+        "reason": "DESIGN.md: Inter is the single sanctioned family ('Don't introduce a second typeface')"
       }
     ]
   }
