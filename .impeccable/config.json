@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "broken-image",
+        "value": "*",
+        "files": [
+          "black/index.html"
+        ],
+        "createdAt": "2026-11-14T17:15:40.879Z",
+        "reason": "Claude: lightbox img gets its src from js/script.js on click; same pattern as index.html"
+      }
+    ]
+  }
+}

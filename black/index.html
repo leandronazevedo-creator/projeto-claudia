@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <!-- Black November: depois de 30/11 às 23h59 (Brasília) a página leva para a oferta normal -->
+  <script>
+    window.BN_DEADLINE = Date.parse('2026-11-30T23:59:59-03:00');
+    if (Date.now() > window.BN_DEADLINE) {
+      location.replace('../' + location.search);
+    }
+  </script>
+
+  <!-- Meta Pixel -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1664425621411014');
+  fbq('track', 'PageView');
+  fbq('track', 'ViewContent', {
+    content_name: 'Comunidade Diástase Nunca Mais',
+    content_category: 'Saúde e Bem-estar',
+    value: 197.00,
+    currency: 'BRL'
+  });
+  </script>
+  <noscript>
+  <img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1664425621411014&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel -->
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PNTZ1658DX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PNTZ1658DX');
+  </script>
+  <script>
+    gtag('event', 'view_item', {
+      currency: 'BRL',
+      value: 197.00,
+      items: [{
+        item_name: 'Comunidade Diástase Nunca Mais',
+        item_category: 'Saúde e Bem-estar',
+        price: 197.00
+      }]
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('a[href*="pay.kiwify.com.br"]')
+        .forEach(function(btn) {
+          btn.addEventListener('click', function() {
+            gtag('event', 'begin_checkout', {
+              currency: 'BRL',
+              value: 197.00,
+              items: [{
+                item_name: 'Comunidade Diástase Nunca Mais',
+                price: 197.00
+              }]
+            });
+            fbq('track', 'InitiateCheckout', {
+              content_name: 'Comunidade Diástase Nunca Mais',
+              value: 197.00,
+              currency: 'BRL'
+            });
+          });
+        });
+    });
+
+    var scrollMarks = {25: false, 50: false, 75: false, 100: false};
+    window.addEventListener('scroll', function() {
+      var scrolled = (window.scrollY + window.innerHeight) /
+                     document.documentElement.scrollHeight * 100;
+      Object.keys(scrollMarks).forEach(function(mark) {
+        if (!scrollMarks[mark] && scrolled >= mark) {
+          scrollMarks[mark] = true;
+          gtag('event', 'scroll_depth', {
+            percent_scrolled: parseInt(mark),
+            page: 'pagina_black_curta'
+          });
+        }
+      });
+    });
+  </script>
+  <!-- End Google tag -->
+
+  <!-- UTM passthrough: repassa os parâmetros utm da URL da página pro link de checkout do Kiwify -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var pageParams = new URLSearchParams(window.location.search);
+      var utmKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+      var utmParams = new URLSearchParams();
+      utmKeys.forEach(function(key) {
+        var value = pageParams.get(key);
+        if (value) utmParams.set(key, value);
+      });
+      if (utmParams.toString() === '') return;
+
+      document.querySelectorAll('a[href*="pay.kiwify.com.br"]').forEach(function(link) {
+        var url = new URL(link.href, window.location.href);
+        utmParams.forEach(function(value, key) {
+          url.searchParams.set(key, value);
+        });
+        link.href = url.toString();
+      });
+    });
+  </script>
+  <!-- End UTM passthrough -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Black November · Diástase Nunca Mais por R$ 197</title>
+  <meta name="robots" content="noindex">
+  <meta name="description" content="Black November da Comunidade Diástase Nunca Mais: de R$ 297 por R$ 197, só até 30 de novembro. Acompanhamento da Cláudia Esquarcini no WhatsApp por 6 meses.">
+  <meta name="theme-color" content="#04241F">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="preload" as="image" href="../img/claudia_hero.webp" type="image/webp">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../black/black.css">
+</head>
+<body class="pg-black">
+
+<!-- CTA FIXO (celular): aparece quando o topo, o card de preço e o final saem da tela -->
+<div class="sticky-cta" id="stickyCta" aria-hidden="true" inert>
+  <a href="https://pay.kiwify.com.br/VEL0DzD">
+    <span>GARANTIR POR R$&nbsp;197</span>
+    <span class="bk-sticky-time">Termina em <span data-bn="short">--</span></span>
+  </a>
+</div>
+
+<!-- ============================================================
+     1. TOPO: a oferta inteira na primeira tela
+     ============================================================ -->
+<header class="bk-hero" id="hero">
+  <div class="container bk-hero__grid">
+
+    <div class="bk-hero__offer">
+      <p class="bk-brand"><span class="bk-brand__black">Black November</span> <span class="bk-brand__name">Comunidade Diástase Nunca Mais</span></p>
+
+      <h1 class="bk-title">R$&nbsp;100 a menos para você <span class="bk-title__hl">eliminar a diástase.</span></h1>
+
+      <p class="bk-lead">Mesmo método, mesmo acompanhamento da Cláudia no WhatsApp por 6 meses. Só até segunda, dia 30.</p>
+
+      <div class="bk-price" aria-label="De 297 reais por 197 reais">
+        <span class="bk-price__old"><s>R$&nbsp;297</s></span>
+        <span class="bk-price__new">R$&nbsp;197</span>
+        <span class="bk-price__inst">ou 12x de R$&nbsp;20,37</span>
+      </div>
+
+      <div class="bk-clock-wrap">
+        <p class="bk-clock-wrap__lbl">O desconto acaba em</p>
+        <span class="bn-clock bk-clock" role="timer" aria-label="Tempo até o fim da Black November">
+          <span class="bn-clock__unit"><span class="bn-clock__num" data-bn="d">--</span><span class="bn-clock__lbl">dias</span></span>
+          <span class="bn-clock__unit"><span class="bn-clock__num" data-bn="h">--</span><span class="bn-clock__lbl">horas</span></span>
+          <span class="bn-clock__unit"><span class="bn-clock__num" data-bn="m">--</span><span class="bn-clock__lbl">min</span></span>
+          <span class="bn-clock__unit"><span class="bn-clock__num" data-bn="s">--</span><span class="bn-clock__lbl">seg</span></span>
+        </span>
+      </div>
+
+      <div class="cta-block bk-cta">
+        <a href="https://pay.kiwify.com.br/VEL0DzD" class="btn-primary btn-xl">QUERO ELIMINAR MINHA DIÁSTASE</a>
+        <p class="cta-micro cta-micro--light">Garantia de 7 dias &middot; Acesso imediato &middot; Pagamento seguro via Kiwify</p>
+      </div>
+    </div>
+
+    <figure class="bk-hero__photo">
+      <picture>
+        <source srcset="../img/claudia_hero.webp" type="image/webp">
+        <img src="../img/claudia_hero.jpg" alt="Cláudia Esquarcini, sorrindo, de blazer verde" width="900" height="900" fetchpriority="high">
+      </picture>
+      <figcaption>
+        <strong>Cláudia Esquarcini</strong>
+        Especialista em Tratamento de Diástase Abdominal &middot; mais de 10 mil alunas pelo mundo
+      </figcaption>
+    </figure>
+
+  </div>
+</header>
+
+<!-- ============================================================
+     2. O QUE VOCÊ RECEBE
+     ============================================================ -->
+<section class="bk-section bk-what" id="o-que-recebe">
+  <div class="container bk-narrow">
+    <h2 class="bk-h2">Tudo que você recebe pelos mesmos R$&nbsp;197</h2>
+
+    <ul class="bk-list">
+      <li class="bk-item bk-item--lead">
+        <span class="bk-item__check" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <div>
+          <h3>A Cláudia te acompanhando no WhatsApp por 6 meses</h3>
+          <p>De segunda a sexta, exercício novo todo dia útil e suas dúvidas respondidas por ela. Não é curso gravado e esquecido.</p>
+        </div>
+      </li>
+      <li class="bk-item">
+        <span class="bk-item__check" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <div>
+          <h3>Plataforma completa com 6 meses de acesso</h3>
+          <p>O método na ordem certa: respiração, ativação profunda e fortalecimento. 15 a 20 minutos por dia, em casa, sem equipamento.</p>
+        </div>
+      </li>
+      <li class="bk-item">
+        <span class="bk-item__check" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <div>
+          <h3>Treino completo com a Ana Alice</h3>
+          <p>10 aulas de braço e perna com a personal trainer parceira da Cláudia.</p>
+        </div>
+      </li>
+      <li class="bk-item">
+        <span class="bk-item__check" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <div>
+          <h3>3 bônus</h3>
+          <p>Desafio Barriga Firme 7 Dias, Aula de Pompoarismo e o e-book Receitas Práticas para Secar.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================================
+     3. PROVA: antes e depois reais
+     ============================================================ -->
+<section class="bk-section bk-proof" id="resultados">
+  <div class="container">
+    <h2 class="bk-h2 bk-h2--center">Alunas reais, sem cirurgia</h2>
+
+    <div class="bk-proof__grid">
+      <button type="button" class="print bk-shot" data-full="../img/antes-depois/antes-depois-02.webp">
+        <picture>
+          <source srcset="../img/antes-depois/antes-depois-02.webp" type="image/webp">
+          <img src="../img/antes-depois/antes-depois-02.jpg" alt="Aluna da comunidade de lado, comparando o antes e os primeiros 15 dias de programa, com a barriga visivelmente menor" width="808" height="951" loading="lazy">
+        </picture>
+      </button>
+      <button type="button" class="print bk-shot" data-full="../img/antes-depois/antes-depois-01.webp">
+        <picture>
+          <source srcset="../img/antes-depois/antes-depois-01.webp" type="image/webp">
+          <img src="../img/antes-depois/antes-depois-01.jpg" alt="Antes e depois de aluna da comunidade, de frente, mostrando a redução do volume da barriga" width="798" height="522" loading="lazy">
+        </picture>
+      </button>
+      <button type="button" class="print bk-shot" data-full="../img/antes-depois/antes-depois-03.webp">
+        <picture>
+          <source srcset="../img/antes-depois/antes-depois-03.webp" type="image/webp">
+          <img src="../img/antes-depois/antes-depois-03.jpg" alt="Antes e depois de aluna de conjunto de treino, de frente, com o abdômen mais firme na segunda foto" width="828" height="705" loading="lazy">
+        </picture>
+      </button>
+      <button type="button" class="print bk-shot" data-full="../img/antes-depois/antes-depois-04.webp">
+        <picture>
+          <source srcset="../img/antes-depois/antes-depois-04.webp" type="image/webp">
+          <img src="../img/antes-depois/antes-depois-04.jpg" alt="Antes e depois de aluna da comunidade mostrando a cintura e o abdômen com volume menor" width="822" height="582" loading="lazy">
+        </picture>
+      </button>
+    </div>
+    <p class="bk-proof__hint">Toque na foto para ampliar. Os resultados variam de pessoa para pessoa.</p>
+
+    <blockquote class="bk-quote">
+      <p>"Tenho alunas que estavam com cirurgia marcada. Cancelaram depois do método."</p>
+      <footer>Cláudia Esquarcini</footer>
+    </blockquote>
+  </div>
+</section>
+
+<!-- ============================================================
+     4. PREÇO
+     ============================================================ -->
+<section class="bk-section bk-offer" id="oferta">
+  <div class="container">
+    <div class="bk-card" id="checkout">
+      <p class="bk-card__tag">Black November: &minus;R$&nbsp;100</p>
+      <p class="bk-card__from">De <s>R$&nbsp;297</s> por</p>
+      <p class="bk-card__price">R$&nbsp;197</p>
+      <p class="bk-card__inst">à vista, ou 12x de <strong>R$&nbsp;20,37</strong></p>
+      <p class="bk-card__anchor">Uma abdominoplastia custa de R$&nbsp;15 a 20 mil e não fortalece a musculatura.</p>
+      <a href="https://pay.kiwify.com.br/VEL0DzD" class="btn-primary btn-xl">QUERO ELIMINAR MINHA DIÁSTASE</a>
+      <p class="cta-micro cta-micro--light">Dia 1º de dezembro o valor volta para R$&nbsp;297.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     5. GARANTIA
+     ============================================================ -->
+<section class="bk-section bk-guarantee" id="garantia">
+  <div class="container bk-narrow bk-guarantee__inner">
+    <div class="bk-seal" aria-hidden="true">
+      <span class="bk-seal__num">7</span>
+      <span class="bk-seal__days">dias</span>
+    </div>
+    <div>
+      <h2 class="bk-h2">Teste por 7 dias. O risco é todo nosso.</h2>
+      <p>Entre, faça as primeiras aulas e participe do grupo da Cláudia. Se decidir que não é pra você, por qualquer motivo, é só pedir: você recebe <strong>100% do valor de volta</strong> pela Kiwify, sem perguntas.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     6. FAQ CURTO
+     ============================================================ -->
+<section class="bk-section bk-faq" id="faq">
+  <div class="container bk-narrow">
+    <h2 class="bk-h2">Dúvidas rápidas</h2>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="bk-a1">
+          Até quando vale o preço de R$&nbsp;197?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a" id="bk-a1" hidden>
+          <p>Até segunda-feira, 30 de novembro, às 23h59 (horário de Brasília). É o mesmo programa, com o mesmo acompanhamento e os mesmos bônus. Dia 1º de dezembro o valor volta para R$&nbsp;297.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="bk-a2">
+          Tenho mais de 55 anos. Consigo acompanhar?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a" id="bk-a2" hidden>
+          <p>A maioria das alunas tem entre 40 e 65 anos, e há alunas de quase 70. Os exercícios respeitam seu ritmo e começam pela respiração.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="bk-a3">
+          Minha diástase é antiga. Ainda dá?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a" id="bk-a3" hidden>
+          <p>Sim. Muitas alunas chegam com diástase de gravidez de anos atrás. O método trabalha a musculatura profunda na ordem certa, e cada uma evolui no seu tempo. Os resultados variam de pessoa para pessoa.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="bk-a4">
+          Como recebo o acesso?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a" id="bk-a4" hidden>
+          <p>Logo depois da confirmação do pagamento, a Kiwify te manda um e-mail com o login. O link do grupo do WhatsApp chega junto com o acesso.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     7. FECHAMENTO: o relógio grande
+     ============================================================ -->
+<section class="bk-final" id="cta-final">
+  <div class="container">
+    <h2 class="bk-final__title">Quando o relógio zerar, volta para R$&nbsp;297.</h2>
+    <span class="bn-clock bk-clock bk-clock--big" role="timer" aria-label="Tempo até o fim da Black November">
+      <span class="bn-clock__unit"><span class="bn-clock__num" data-bn="d">--</span><span class="bn-clock__lbl">dias</span></span>
+      <span class="bn-clock__unit"><span class="bn-clock__num" data-bn="h">--</span><span class="bn-clock__lbl">horas</span></span>
+      <span class="bn-clock__unit"><span class="bn-clock__num" data-bn="m">--</span><span class="bn-clock__lbl">min</span></span>
+      <span class="bn-clock__unit"><span class="bn-clock__num" data-bn="s">--</span><span class="bn-clock__lbl">seg</span></span>
+    </span>
+    <p class="bk-final__price"><s>R$&nbsp;297</s> <strong>R$&nbsp;197</strong></p>
+    <div class="cta-block">
+      <a href="https://pay.kiwify.com.br/VEL0DzD" class="btn-primary btn-xl">QUERO ELIMINAR MINHA DIÁSTASE</a>
+      <p class="cta-micro cta-micro--light">Garantia de 7 dias &middot; Acesso imediato &middot; 12x de R$&nbsp;20,37</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer bk-footer">
+  <div class="container">
+    <p class="footer__disclaimer">Os resultados podem variar de pessoa para pessoa. Depoimentos são relatos individuais de alunas. Este programa não substitui avaliação e acompanhamento médico.</p>
+    <p>&copy; 2026 Cláudia Esquarcini &middot; Comunidade Diástase Nunca Mais. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<!-- LIGHTBOX para ampliar as fotos -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto ampliada" hidden>
+  <button type="button" class="lightbox__close" aria-label="Fechar imagem ampliada">&times;</button>
+  <img alt="Foto ampliada" class="lightbox__img">
+</div>
+
+<script src="../js/script.js"></script>
+<script src="../black-november/black-november.js"></script>
+</body>
+</html>
