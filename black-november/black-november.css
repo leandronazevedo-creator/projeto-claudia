@@ -1,0 +1,182 @@
+/* ============================================================
+   BLACK NOVEMBER: camada sobre css/style.css
+   Mesmo mundo (verde estrutura, laranja ação). A "noite" da Black
+   é um verde quase preto, irmão do Verde Rodapé; o relógio usa
+   numerais tabulares 900, como a gramática das horas.
+   ============================================================ */
+:root {
+  --bn-night: #04241F;
+}
+
+/* ---------- Relógio (componente base) ---------- */
+.bn-clock {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 6px;
+  font-variant-numeric: tabular-nums;
+}
+.bn-clock__unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 2.2ch;
+}
+.bn-clock__num {
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+.bn-clock__lbl {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+/* ---------- Faixa do topo ---------- */
+.bn-bar {
+  background: var(--bn-night);
+  color: var(--white);
+  padding: 12px 0 14px;
+  border-bottom: 1px solid rgba(255, 200, 133, 0.22);
+}
+.bn-bar__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+.bn-bar__title {
+  font-size: 16px;
+  line-height: 1.35;
+  color: rgba(255, 255, 255, 0.9);
+}
+.bn-bar__title strong {
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-right: 6px;
+}
+.bn-bar__deal { font-weight: 700; color: var(--orange-soft); }
+.bn-bar__deal s { color: rgba(255, 255, 255, 0.72); font-weight: 500; text-decoration-color: var(--orange); }
+.bn-bar__clock {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.bn-bar__ends {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.78);
+}
+.bn-clock--bar { gap: 10px; }
+.bn-clock--bar .bn-clock__num { font-size: 24px; color: var(--orange-soft); }
+.bn-clock--bar .bn-clock__lbl { font-size: 11px; color: rgba(255, 255, 255, 0.72); margin-top: 2px; }
+
+/* ---------- Hero: preço riscado acima do botão ---------- */
+.bn-hero-price {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-top: 8px;
+}
+.bn-hero-price s { color: var(--text-mid); font-weight: 500; text-decoration-color: var(--orange); }
+.bn-hero-price strong {
+  font-size: 26px;
+  font-weight: 900;
+  color: var(--orange-h);
+  letter-spacing: -0.02em;
+  margin-left: 4px;
+}
+
+/* ---------- Price-card ---------- */
+.bn-tag {
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--bn-night);
+  background: var(--orange-soft);
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.price-card .price-from { font-size: 18px; }
+.bn-price-main {
+  font-size: clamp(52px, 14vw, 84px);
+  font-weight: 900;
+  color: var(--orange-soft);
+  letter-spacing: -0.03em;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  margin: 2px 0 4px;
+}
+.price-card .price-or { font-size: 17px; color: rgba(255, 255, 255, 0.88); }
+.price-card .price-or strong { color: var(--white); font-weight: 800; }
+.bn-card-clock {
+  width: 100%;
+  max-width: 360px;
+  margin: 18px 0 6px;
+  padding: 14px 12px 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+.bn-card-clock__lbl {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 8px;
+}
+.bn-clock--card { gap: 14px; }
+.bn-clock--card .bn-clock__num { font-size: 34px; color: var(--white); }
+.bn-clock--card .bn-clock__lbl { color: rgba(255, 255, 255, 0.72); }
+.price-card .price-compare { font-style: normal; font-weight: 600; margin-top: 8px; }
+
+/* ---------- CTA final: o relógio grande ---------- */
+.bn-final { margin: 0 auto 28px; }
+.bn-final__lbl {
+  font-size: 17px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 10px;
+}
+.bn-clock--final { gap: clamp(12px, 3vw, 28px); }
+.bn-clock--final .bn-clock__num { font-size: clamp(44px, 12vw, 88px); color: var(--orange-soft); }
+.bn-clock--final .bn-clock__lbl { font-size: 13px; color: rgba(255, 255, 255, 0.75); margin-top: 6px; }
+.bn-final-old {
+  font-size: 0.6em;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.72);
+  text-decoration-color: var(--orange);
+  margin-right: 6px;
+}
+
+/* ---------- CTA fixo (celular): preço + tempo ---------- */
+.sticky-cta a {
+  flex-direction: column;
+  line-height: 1.2;
+  gap: 2px;
+}
+.bn-sticky-time {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  color: rgba(255, 255, 255, 0.92);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- Tablet e desktop ---------- */
+@media (min-width: 768px) {
+  .bn-bar__inner {
+    flex-direction: row;
+    justify-content: center;
+    gap: 28px;
+  }
+  .bn-bar__title { font-size: 17px; }
+}
+
+.bn-nowrap { white-space: nowrap; }

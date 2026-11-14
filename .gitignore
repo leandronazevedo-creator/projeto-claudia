@@ -10,3 +10,7 @@ img/IMG_7281 2.png
 .impeccable/review/
 .impeccable/questions/
 .impeccable/hook.cache.json
+
+# impeccable: skill e agentes instalados por "npx impeccable install" (binários, ~25 MB)
+.claude/skills/
+.claude/agents/
