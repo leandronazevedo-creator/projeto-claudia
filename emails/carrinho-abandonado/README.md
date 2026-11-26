@@ -30,13 +30,13 @@ Em **Settings → Environment Variables** do projeto, crie e depois faça um nov
 | `WEBHOOK_SECRET` | uma senha longa qualquer, inventada por vocês |
 | `KIWIFY_TOKEN` | opcional: o token que a Kiwify mostra no webhook |
 
-Teste abrindo `https://SEU-DOMINIO/api/kiwify-abandono` no navegador: deve aparecer `webhook Kiwify → Brevo no ar`.
+Teste abrindo `https://claudiadiastase.com.br/api/kiwify-abandono` no navegador: deve aparecer `webhook Kiwify → Brevo no ar`.
 
 ## 3. Kiwify
 
 **Apps → Webhooks → Criar webhook**
 
-- URL: `https://SEU-DOMINIO/api/kiwify-abandono?key=O_WEBHOOK_SECRET`
+- URL: `https://claudiadiastase.com.br/api/kiwify-abandono?key=O_WEBHOOK_SECRET`
 - Produto: o da Black (checkout `VEL0DzD`)
 - Eventos: **Carrinho abandonado** e **Compra aprovada**
 
