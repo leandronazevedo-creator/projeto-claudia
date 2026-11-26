@@ -12,6 +12,7 @@
 //   BREVO_LIST_COMPRADORAS ID numérico da lista de compradoras (opcional)
 //   WEBHOOK_SECRET         segredo que vai na URL: /api/kiwify-abandono?key=SEGREDO (obrigatória)
 //   KIWIFY_TOKEN           token do webhook na Kiwify; se definido, confere a assinatura (opcional)
+//   BREVO_ATTR_NOME        atributo do primeiro nome no Brevo (padrão: NOME)
 //   BLACK_DEADLINE         fim da oferta, ISO 8601 (padrão: 2026-11-30T23:59:59-03:00)
 
 import { createHmac, timingSafeEqual } from 'node:crypto';
@@ -104,7 +105,8 @@ export async function POST(request) {
 
   const listAbandono = Number(env.BREVO_LIST_ABANDONO);
   const listCompradoras = Number(env.BREVO_LIST_COMPRADORAS || 0);
-  const attributes = firstName ? { FIRSTNAME: firstName } : {};
+  const attrNome = env.BREVO_ATTR_NOME || 'NOME';
+  const attributes = firstName ? { [attrNome]: firstName } : {};
 
   try {
     if (comprou) {

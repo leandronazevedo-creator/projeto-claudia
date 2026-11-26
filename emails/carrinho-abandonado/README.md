@@ -15,7 +15,7 @@ Quem compra sai da sequência na hora.
 1. Crie a conta grátis em brevo.com.
 2. **Remetentes, domínios e IPs → Domínios**: autentique o domínio de envio (SPF, DKIM e DMARC no DNS). Sem isso o e-mail cai no spam.
 3. **Contatos → Listas**: crie as listas `Black - Abandono` e `Black - Compradoras`. Anote o ID numérico de cada uma.
-4. **Contatos → Configurações → Atributos**: confira se existe o atributo `FIRSTNAME`. Se a conta estiver com `NOME`/`PRENOME`, crie `FIRSTNAME` (texto).
+4. O primeiro nome vai no atributo `NOME`, que já existe na conta (dá para trocar com a variável `BREVO_ATTR_NOME`).
 5. **SMTP & API → Chaves de API**: gere uma chave.
 
 ## 2. Vercel
