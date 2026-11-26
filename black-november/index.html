@@ -134,6 +134,7 @@
 
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../black-november/black-november.css">
+  <link rel="stylesheet" href="../black/carrossel.css">
 </head>
 <body>
 
@@ -334,44 +335,169 @@
 
     <h2 class="section-title section-title--center">Veja o que aconteceu com quem entrou para a Comunidade Diástase Nunca Mais</h2>
 
-    <div class="ba-grid">
-      <button type="button" class="print ba-item" data-full="../img/antes-depois/antes-depois-01.webp">
-        <picture>
-          <source srcset="../img/antes-depois/antes-depois-01.webp" type="image/webp">
-          <img src="../img/antes-depois/antes-depois-01.jpg" alt="Antes e depois de aluna da comunidade, de frente, mostrando a redução do volume da barriga" width="798" height="522" loading="lazy">
-        </picture>
+    <div class="bk-car" role="region" aria-roledescription="carrossel" aria-label="Resultados e depoimentos de alunas">
+      <button type="button" class="bk-car__arrow bk-car__arrow--prev" aria-label="Ver depoimentos anteriores" data-dir="-1">
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
-      <button type="button" class="print ba-item" data-full="../img/antes-depois/antes-depois-02.webp">
-        <picture>
-          <source srcset="../img/antes-depois/antes-depois-02.webp" type="image/webp">
-          <img src="../img/antes-depois/antes-depois-02.jpg" alt="Aluna da comunidade de lado, comparando o antes e os primeiros 15 dias de programa, com a barriga visivelmente menor" width="808" height="951" loading="lazy">
-        </picture>
-      </button>
-      <button type="button" class="print ba-item" data-full="../img/antes-depois/antes-depois-03.webp">
-        <picture>
-          <source srcset="../img/antes-depois/antes-depois-03.webp" type="image/webp">
-          <img src="../img/antes-depois/antes-depois-03.jpg" alt="Antes e depois de aluna de conjunto de treino, de frente, com o abdômen mais firme na segunda foto" width="828" height="705" loading="lazy">
-        </picture>
-      </button>
-      <button type="button" class="print ba-item" data-full="../img/antes-depois/antes-depois-04.webp">
-        <picture>
-          <source srcset="../img/antes-depois/antes-depois-04.webp" type="image/webp">
-          <img src="../img/antes-depois/antes-depois-04.jpg" alt="Antes e depois de aluna da comunidade mostrando a cintura e o abdômen com volume menor" width="822" height="582" loading="lazy">
-        </picture>
-      </button>
-      <button type="button" class="print ba-item" data-full="../img/antes-depois/antes-depois-06.webp">
-        <picture>
-          <source srcset="../img/antes-depois/antes-depois-06.webp" type="image/webp">
-          <img src="../img/antes-depois/antes-depois-06.jpg" alt="Antes e depois de aluna da comunidade, com a barriga menor e a postura mais firme na foto da direita" width="828" height="818" loading="lazy">
-        </picture>
-      </button>
-      <button type="button" class="print ba-item" data-full="../img/antes-depois/antes-depois-07.webp">
-        <picture>
-          <source srcset="../img/antes-depois/antes-depois-07.webp" type="image/webp">
-          <img src="../img/antes-depois/antes-depois-07.jpg" alt="Comparação de antes e depois de aluna, de lado, com o volume da barriga reduzido" width="504" height="1079" loading="lazy">
-        </picture>
+      <ul class="bk-car__track" tabindex="0">
+        <li class="bk-car__slide">
+          <button type="button" class="print bk-car__card" data-full="../img/antes-depois/antes-depois-02.webp" aria-label="Ampliar depoimento 1 de 19">
+            <picture>
+              <source srcset="../img/antes-depois/antes-depois-02.webp" type="image/webp">
+              <img src="../img/antes-depois/antes-depois-02.jpg" alt="Aluna da comunidade de lado, comparando o antes e os primeiros 15 dias de programa, com a barriga visivelmente menor" width="808" height="951">
+            </picture>
+          </button>
+        </li>
+        <li class="bk-car__slide">
+          <button type="button" class="print bk-car__card" data-full="../img/antes-depois/antes-depois-01.webp" aria-label="Ampliar depoimento 2 de 19">
+            <picture>
+              <source srcset="../img/antes-depois/antes-depois-01.webp" type="image/webp">
+              <img src="../img/antes-depois/antes-depois-01.jpg" alt="Antes e depois de aluna da comunidade, de frente, mostrando a redução do volume da barriga" width="798" height="522">
+            </picture>
+          </button>
+        </li>
+        <li class="bk-car__slide">
+          <button type="button" class="print bk-car__card" data-full="../img/depoimentos/manequim-52-48.webp" aria-label="Ampliar depoimento 3 de 19">
+            <picture>
+              <source srcset="../img/depoimentos/manequim-52-48.webp" type="image/webp">
+              <img src="../img/depoimentos/manequim-52-48.jpg" alt="Print de aluna do programa mostrando a calça jeans que vestiu, relatando que usava manequim 52 e agora o 48 está largo" width="720" height="1280">
+            </picture>
+          </button>
+        </li>
+        <li class="bk-car__slide">
+          <button type="button" class="print bk-car__card" data-full="../img/antes-depois/antes-depois-03.webp" aria-label="Ampliar depoimento 4 de 19">
+            <picture>
+              <source srcset="../img/antes-depois/antes-depois-03.webp" type="image/webp">
+              <img src="../img/antes-depois/antes-depois-03.jpg" alt="Antes e depois de aluna de conjunto de treino, de frente, com o abdômen mais firme na segunda foto" width="828" height="705" loading="lazy">
+            </picture>
+          </button>
+        </li>
+        <li class="bk-car__slide">
+          <button type="button" class="print bk-car__card" data-full="../img/depoimentos/fran-historia.webp" aria-label="Ampliar depoimento 5 de 19">
+            <picture>
+              <source srcset="../img/depoimentos/fran-historia.webp" type="image/webp">
+              <img src="../img/depoimentos/fran-historia.jpg" alt="Print de conversa da aluna Fran contando que achou que não ia dar resultado e no quarto dia vestiu uma calça e viu que a barriga tinha diminuído" width="828" height="1146" loading="lazy">
+            </picture>
+          </button>
+        </li>
+        <li class="bk-car__slide">
+          <button type="button" class="print bk-car__card" data-full="../img/antes-depois/antes-depois-04.webp" aria-label="Ampliar depoimento 6 de 19">
+            <picture>
+              <source srcset="../img/antes-depois/antes-depois-04.webp" type="image/webp">
+              <img src="../img/antes-depois/antes-depois-04.jpg" alt="Antes e depois de aluna da comunidade mostrando a cintura e o abdômen com volume menor" width="822" height="582" loading="lazy">
+            </picture>
+          </button>
+        </li>
+        <li class="bk-car__slide">
+          <button type="button" class="print bk-car__card" data-full="../img/depoimentos/aluna-54-anos.webp" aria-label="Ampliar depoimento 7 de 19">
+            <picture>
+              <source srcset="../img/depoimentos/aluna-54-anos.webp" type="image/webp">
+              <img src="../img/depoimentos/aluna-54-anos.jpg" alt="Print de conversa com foto do resultado de aluna de 54 anos relatando que todos diziam que ela não conseguiria por causa da idade e da menopausa" width="626" height="1280" loading="lazy">
+            </picture>
+          </button>
+        </li>
+        <li class="bk-car__slide">
+          <button type="button" class="print bk-car__card" data-full="../img/antes-depois/antes-depois-06.webp" aria-label="Ampliar depoimento 8 de 19">
+            <picture>
+              <source srcset="../img/antes-depois/antes-depois-06.webp" type="image/webp">
+              <img src="../img/antes-depois/antes-depois-06.jpg" alt="Antes e depois de aluna da comunidade, com a barriga menor e a postura mais firme na foto da direita" width="828" height="818" loading="lazy">
+            </picture>
+          </button>
+        </li>
+        <li class="bk-car__slide">
+          <button type="button" class="print bk-car__card" data-full="../img/depoimentos/grupo-3-aulas.webp" aria-label="Ampliar depoimento 9 de 19">
+            <picture>
+              <source srcset="../img/depoimentos/grupo-3-aulas.webp" type="image/webp">
+              <img src="../img/depoimentos/grupo-3-aulas.jpg" alt="Print do grupo de WhatsApp com foto de antes e depois da barriga e a mensagem: olha meninas, já deu diferença, só três aulas" width="337" height="589" loading="lazy">
+            </picture>
+          </button>
+        </li>
+        <li class="bk-car__slide">
+          <button type="button" class="print bk-car__card" data-full="../img/depoimentos/cintas-resultado.webp" aria-label="Ampliar depoimento 10 de 19">
+            <picture>
+              <source srcset="../img/depoimentos/cintas-resultado.webp" type="image/webp">
+              <img src="../img/depoimentos/cintas-resultado.jpg" alt="Print de aluna com fotos do resultado relatando que passou a vida usando cintas modeladoras e encontrou um caminho gentil" width="828" height="898" loading="lazy">
+            </picture>
+          </button>
+        </li>
+        <li class="bk-car__slide">
+          <button type="button" class="print bk-car__card" data-full="../img/antes-depois/antes-depois-07.webp" aria-label="Ampliar depoimento 11 de 19">
+            <picture>
+              <source srcset="../img/antes-depois/antes-depois-07.webp" type="image/webp">
+              <img src="../img/antes-depois/antes-depois-07.jpg" alt="Comparação de antes e depois de aluna, de lado, com o volume da barriga reduzido" width="504" height="1079" loading="lazy">
+            </picture>
+          </button>
+        </li>
+        <li class="bk-car__slide">
+          <button type="button" class="print bk-car__card" data-full="../img/depoimentos/calca-jeans.webp" aria-label="Ampliar depoimento 12 de 19">
+            <picture>
+              <source srcset="../img/depoimentos/calca-jeans.webp" type="image/webp">
+              <img src="../img/depoimentos/calca-jeans.jpg" alt="Print de aluna com foto do resultado relatando que nunca tinha tido prazer de vestir uma calça por causa da barriga estufada" width="513" height="714" loading="lazy">
+            </picture>
+          </button>
+        </li>
+        <li class="bk-car__slide">
+          <button type="button" class="print bk-car__card" data-full="../img/depoimentos/abdomen-definido.webp" aria-label="Ampliar depoimento 13 de 19">
+            <picture>
+              <source srcset="../img/depoimentos/abdomen-definido.webp" type="image/webp">
+              <img src="../img/depoimentos/abdomen-definido.jpg" alt="Print de feedback de aluna com foto do abdômen relatando linhas de definição muscular e intestino funcionando melhor" width="720" height="1280" loading="lazy">
+            </picture>
+          </button>
+        </li>
+        <li class="bk-car__slide">
+          <button type="button" class="print bk-car__card" data-full="../img/depoimentos/escape-espelho-postura.webp" aria-label="Ampliar depoimento 14 de 19">
+            <picture>
+              <source srcset="../img/depoimentos/escape-espelho-postura.webp" type="image/webp">
+              <img src="../img/depoimentos/escape-espelho-postura.jpg" alt="Mensagens de aluna no WhatsApp: hoje consegue se olhar no espelho, o estômago baixou e o escape de xixi diminuiu" width="828" height="784" loading="lazy">
+            </picture>
+          </button>
+        </li>
+        <li class="bk-car__slide">
+          <button type="button" class="print bk-car__card" data-full="../img/depoimentos/comentarios-live.webp" aria-label="Ampliar depoimento 15 de 19">
+            <picture>
+              <source srcset="../img/depoimentos/comentarios-live.webp" type="image/webp">
+              <img src="../img/depoimentos/comentarios-live.jpg" alt="Print de comentários de alunas ao vivo relatando melhora na barriga, no intestino e nos escapes de urina" width="666" height="1280" loading="lazy">
+            </picture>
+          </button>
+        </li>
+        <li class="bk-car__slide">
+          <button type="button" class="print bk-car__card" data-full="../img/depoimentos/comentario-15-dias.webp" aria-label="Ampliar depoimento 16 de 19">
+            <picture>
+              <source srcset="../img/depoimentos/comentario-15-dias.webp" type="image/webp">
+              <img src="../img/depoimentos/comentario-15-dias.jpg" alt="Comentário de aluna relatando que com 15 dias de aulas já está bem melhor" width="800" height="231" loading="lazy">
+            </picture>
+          </button>
+        </li>
+        <li class="bk-car__slide">
+          <button type="button" class="print bk-car__card" data-full="../img/depoimentos/comentario-abdomen.webp" aria-label="Ampliar depoimento 17 de 19">
+            <picture>
+              <source srcset="../img/depoimentos/comentario-abdomen.webp" type="image/webp">
+              <img src="../img/depoimentos/comentario-abdomen.jpg" alt="Comentário de aluna relatando que fez exercícios de abdômen a vida inteira e aprendeu com as aulas que não precisava" width="648" height="319" loading="lazy">
+            </picture>
+          </button>
+        </li>
+        <li class="bk-car__slide">
+          <button type="button" class="print bk-car__card" data-full="../img/depoimentos/escape-absorvente.webp" aria-label="Ampliar depoimento 18 de 19">
+            <picture>
+              <source srcset="../img/depoimentos/escape-absorvente.webp" type="image/webp">
+              <img src="../img/depoimentos/escape-absorvente.jpg" alt="Mensagem de aluna: usava 3 absorventes íntimos por dia por causa de escape de xixi e hoje não usa mais" width="801" height="281" loading="lazy">
+            </picture>
+          </button>
+        </li>
+        <li class="bk-car__slide">
+          <button type="button" class="print bk-car__card" data-full="../img/depoimentos/escape-comentario-cintura.webp" aria-label="Ampliar depoimento 19 de 19">
+            <picture>
+              <source srcset="../img/depoimentos/escape-comentario-cintura.webp" type="image/webp">
+              <img src="../img/depoimentos/escape-comentario-cintura.jpg" alt="Comentário de aluna no Instagram: depois que começou os exercícios, melhorou o escape de xixi, o estômago baixou e está ganhando cintura" width="828" height="336" loading="lazy">
+            </picture>
+          </button>
+        </li>
+      </ul>
+      <button type="button" class="bk-car__arrow bk-car__arrow--next" aria-label="Ver próximos depoimentos" data-dir="1">
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
     </div>
+    <p class="bk-car__hint"><span class="bk-car__count" aria-live="polite">1 de 19</span> &middot; Use as setas ou arraste. Toque na foto para ampliar.</p>
 
     <p class="disclaimer-line">Os depoimentos e resultados acima são experiências pessoais de cada aluna e os resultados podem variar de pessoa para pessoa.</p>
 
@@ -404,59 +530,6 @@
         <p class="stat-who">Aluna, 35 a 44 anos</p>
       </div>
     </div>
-
-    <p class="proof-subtitle">Prints reais das alunas. Toque em qualquer um para ampliar:</p>
-
-    <div class="print-grid">
-      <button type="button" class="print" data-full="../img/depoimentos/comentarios-live.webp">
-        <picture>
-          <source srcset="../img/depoimentos/comentarios-live.webp" type="image/webp">
-          <img src="../img/depoimentos/comentarios-live.jpg" alt="Print de comentários de alunas ao vivo relatando melhora na barriga, no intestino e nos escapes de urina" width="666" height="1280" loading="lazy">
-        </picture>
-      </button>
-      <button type="button" class="print" data-full="../img/depoimentos/cintas-resultado.webp">
-        <picture>
-          <source srcset="../img/depoimentos/cintas-resultado.webp" type="image/webp">
-          <img src="../img/depoimentos/cintas-resultado.jpg" alt="Print de aluna com fotos do resultado relatando que passou a vida usando cintas modeladoras e encontrou um caminho gentil" width="828" height="898" loading="lazy">
-        </picture>
-      </button>
-      <button type="button" class="print" data-full="../img/depoimentos/manequim-52-48.webp">
-        <picture>
-          <source srcset="../img/depoimentos/manequim-52-48.webp" type="image/webp">
-          <img src="../img/depoimentos/manequim-52-48.jpg" alt="Print de aluna do programa mostrando a calça jeans que vestiu, relatando que usava manequim 52 e agora o 48 está largo" width="720" height="1280" loading="lazy">
-        </picture>
-      </button>
-      <button type="button" class="print" data-full="../img/depoimentos/calca-jeans.webp">
-        <picture>
-          <source srcset="../img/depoimentos/calca-jeans.webp" type="image/webp">
-          <img src="../img/depoimentos/calca-jeans.jpg" alt="Print de aluna com foto do resultado relatando que nunca tinha tido prazer de vestir uma calça por causa da barriga estufada" width="513" height="714" loading="lazy">
-        </picture>
-      </button>
-    </div>
-
-    <details class="more-prints">
-      <summary>Ver mais 3 relatos</summary>
-      <div class="print-grid">
-      <button type="button" class="print" data-full="../img/depoimentos/abdomen-definido.webp">
-        <picture>
-          <source srcset="../img/depoimentos/abdomen-definido.webp" type="image/webp">
-          <img src="../img/depoimentos/abdomen-definido.jpg" alt="Print de feedback de aluna com foto do abdômen relatando linhas de definição muscular e intestino funcionando melhor" width="720" height="1280" loading="lazy">
-        </picture>
-      </button>
-      <button type="button" class="print" data-full="../img/depoimentos/comentario-abdomen.webp">
-        <picture>
-          <source srcset="../img/depoimentos/comentario-abdomen.webp" type="image/webp">
-          <img src="../img/depoimentos/comentario-abdomen.jpg" alt="Comentário de aluna relatando que fez exercícios de abdômen a vida inteira e aprendeu com as aulas que não precisava" width="648" height="319" loading="lazy">
-        </picture>
-      </button>
-      <button type="button" class="print" data-full="../img/depoimentos/comentario-15-dias.webp">
-        <picture>
-          <source srcset="../img/depoimentos/comentario-15-dias.webp" type="image/webp">
-          <img src="../img/depoimentos/comentario-15-dias.jpg" alt="Comentário de aluna relatando que com 15 dias de aulas já está bem melhor" width="800" height="231" loading="lazy">
-        </picture>
-      </button>
-      </div>
-    </details>
 
     <p class="disclaimer-line">Resultados individuais. Depoimentos reais de alunas, usados com autorização.</p>
   </div>
@@ -935,6 +1008,7 @@
 
 <script src="../js/script.js"></script>
 <script src="../black-november/black-november.js"></script>
+<script src="../black/carrossel.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('a[href*="pay.kiwify.com.br"]')
